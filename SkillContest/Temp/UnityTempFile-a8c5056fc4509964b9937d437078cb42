@@ -1,27 +1,24 @@
 /target:library
-/out:Temp/Unity.VSCode.Editor.dll
+/out:Temp/Assembly-CSharp-Editor-firstpass.dll
 /nowarn:0169
 /nowarn:0649
-/refout:Temp/Unity.VSCode.Editor.dll.ref
+/refout:Temp/Assembly-CSharp-Editor-firstpass.dll.ref
 /deterministic
 /debug:portable
 /optimize+
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 /reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 /reference:F:/2020.3.30f1/Editor/Data/Managed/UnityEditor.Graphs.dll
 /reference:F:/2020.3.30f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 /reference:F:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-/reference:"F:/포폴폴더/Unity_Project/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
-/reference:"F:/포폴폴더/Unity_Project/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
-/reference:"F:/포폴폴더/Unity_Project/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll"
-/reference:"F:/포폴폴더/Unity_Project/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll"
-/reference:"F:/포폴폴더/Unity_Project/SkillContest/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+/reference:"F:/포폴폴더/Fork/SkillContest/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+/reference:"F:/포폴폴더/Fork/SkillContest/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+/reference:"F:/포폴폴더/Fork/SkillContest/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+/reference:"F:/포폴폴더/Fork/SkillContest/SkillContest/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll"
+/reference:"F:/포폴폴더/Fork/SkillContest/SkillContest/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 /reference:F:/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
 /reference:F:/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll
 /reference:F:/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll
@@ -212,6 +209,21 @@
 /reference:F:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll
 /reference:F:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll
 /reference:F:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll
+/reference:Library/ScriptAssemblies/Cinemachine.dll
+/reference:Library/ScriptAssemblies/Unity.InputSystem.dll
+/reference:Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/com.unity.cinemachine.editor.dll
 /define:CSHARP_7_3_OR_NEWER
 /define:CSHARP_7_OR_LATER
 /define:DEBUG
@@ -240,7 +252,7 @@
 /define:ENABLE_DIRECTOR_TEXTURE
 /define:ENABLE_EDITOR_HUB_LICENSE
 /define:ENABLE_EVENT_QUEUE
-/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:ENABLE_INPUT_SYSTEM
 /define:ENABLE_LOCALIZATION
 /define:ENABLE_LZMA
 /define:ENABLE_MANAGED_ANIMATION_JOBS
@@ -285,6 +297,7 @@
 /define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
 /define:RENDER_SOFTWARE_CURSOR
 /define:SCENE_TEMPLATE_MODULE
+/define:STARTER_ASSETS_PACKAGES_CHECKED
 /define:TRACE
 /define:UNITY_2017_1_OR_NEWER
 /define:UNITY_2017_2_OR_NEWER
@@ -318,11 +331,9 @@
 /define:UNITY_STANDALONE_WIN
 /define:UNITY_TEAM_LICENSE
 /define:USE_SEARCH_ENGINE_API
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\AssemblyNameProvider.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\FileIO.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\GUIDGenerator.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\ProjectGeneration.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\ProjectGenerationFlag.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\ProjectGeneration\StringUtils.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\VSCodeDiscovery.cs"
-"F:\포폴폴더\Unity_Project\SkillContest\Library\PackageCache\com.unity.ide.vscode@1.2.4\Editor\VSCodeScriptEditor.cs"
+"Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs"
+"Assets\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs"
+"Assets\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs"
+"Assets\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs"
+"Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs"
+"Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs"
