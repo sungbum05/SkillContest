@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
         float Z = Input.GetAxis("Vertical");
 
         this.gameObject.transform.position += new Vector3(X * MoveSpeed * Time.deltaTime, 0, Z * MoveSpeed * Time.deltaTime);
+
+        Mathf.Clamp(this.gameObject.transform.position.z, -5, 45);
     }
 
     IEnumerator PlayerRotate()
