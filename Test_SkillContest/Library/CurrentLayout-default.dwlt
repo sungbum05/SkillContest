@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 64
+  controlID: 20
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 42
+  controlID: 82
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 43
+  controlID: 83
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 44
+  controlID: 84
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 405
     height: 560
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 739
     height: 560
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 444
     height: 560
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -510,24 +510,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 26}
-      m_SelectedIDs: fe3affff
-      m_LastClickedID: -50434
-      m_ExpandedIDs: fe3affff023bffff6e3bffff144fffff6a8affffcaaeffffa0f9ffffb8f9ffffecf9ffff12faffff1efaffff6afbffff
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: a2550000
+      m_LastClickedID: 21922
+      m_ExpandedIDs: 30d1ffff20dfffffa2dfffffe4dfffffb0f6ffffccf6ffff6afbffff38540000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: SkyCarWheelFrontRight
-        m_OriginalName: SkyCarWheelFrontRight
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1708
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 
@@ -573,9 +573,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 30.65354, y: -13.25095, z: 49.484116}
+    m_Target: {x: 3.7373292, y: -13.300363, z: 25.138475}
     speed: 2
-    m_Value: {x: 30.65354, y: -13.25095, z: 49.484116}
+    m_Value: {x: 3.7373292, y: -13.300363, z: 25.138475}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -622,13 +622,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.10963331, y: 0.26499915, z: -0.030342607, w: 0.95751244}
+    m_Target: {x: 0.29466963, y: 0.10149728, z: -0.031548876, w: 0.94958603}
     speed: 2
-    m_Value: {x: 0.1096336, y: 0.26499984, z: -0.030342687, w: 0.95751494}
+    m_Value: {x: 0.29464543, y: 0.10292973, z: -0.03199339, w: 0.9495083}
   m_Size:
-    m_Target: 32.444595
+    m_Target: 26.336517
     speed: 2
-    m_Value: 32.444595
+    m_Value: 25.20241
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -699,14 +699,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/SkillContest/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\user\Documents\Fork\Test_SkillContest
+  m_LastProjectPath: C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac650000
-    m_LastClickedID: 26028
-    m_ExpandedIDs: 0000000046440000484400004a4400004c4400004e44000050440000524400005444000056440000584400005a4400005c4400005e440000604400006244000064440000fa440000644c000000ca9a3b
+    m_SelectedIDs: 9a440000
+    m_LastClickedID: 17562
+    m_ExpandedIDs: 000000006a4400006c4400006e44000070440000724400007444000076440000784400007a4400007c4400007e44000080440000824400008444000086440000884400008a4400008c4400009c44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -734,7 +734,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046440000484400004a4400004c4400004e44000050440000524400005444000056440000584400005a4400005c4400005e44000060440000624400006444000066440000
+    m_ExpandedIDs: 000000006a4400006c4400006e44000070440000724400007444000076440000784400007a4400007c4400007e44000080440000824400008444000086440000884400008a4400008c440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
