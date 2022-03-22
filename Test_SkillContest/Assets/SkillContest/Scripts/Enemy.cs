@@ -41,4 +41,6 @@ public abstract class Enemy : MonoBehaviour
     protected abstract void Attack();
 
     protected abstract void EnemyPatton();
+
+    protected abstract void EnemyMove();
 }

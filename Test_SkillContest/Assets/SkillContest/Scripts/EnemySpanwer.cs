@@ -15,6 +15,7 @@ public class EnemySpanwer : MonoBehaviour
     {
         AddPoints();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -51,37 +52,79 @@ public class EnemySpanwer : MonoBehaviour
             EnemyData.SpawnType = EnemyLine[1].ToString();
             EnemyData.SpawnPos = int.Parse(EnemyLine[2]);
 
+            switch (EnemyLine[3].ToString())
+            {
+                case "Top":
+                    EnemyData.MoveDir = -4;
+                    break;
+
+                case "Bottom":
+                    EnemyData.MoveDir = 4;
+                    break;
+
+                case "Left":
+                    EnemyData.MoveDir = -1;
+                    break;
+
+                case "Right":
+                    EnemyData.MoveDir = 1;
+                    break;
+
+                default:
+                    EnemyData.MoveDir = 0;
+                    break;
+            }
+
+            EnemyData.WaitTime = float.Parse(EnemyLine[4]);
+
             EnemyDatas.Add(EnemyData);
         }
 
-        EnemySpawn();
+        StartCoroutine(EnemySpawn());
     }
 
-
-    void EnemySpawn()
+    IEnumerator EnemySpawn()
     {
-        Debug.Log(SpawnPoint[EnemyDatas[5].SpawnPos]);
+        GameObject Enemy = null;
 
         for (int i = 0; i < EnemyDatas.Count; i++)
         {
-            Debug.Log("1차");
-            Debug.Log(i);
-
             Vector3 spawnVec = SpawnPoint[EnemyDatas[i].SpawnPos].position;
-            Debug.Log(SpawnPoint[EnemyDatas[i].SpawnPos]);
+
+            if (EnemyDatas[i].SpawnDelay != 0)
+                yield return new WaitForSeconds(EnemyDatas[i].SpawnDelay);
 
             switch (EnemyDatas[i].SpawnType)
             {
                 case "Cancer":
-
-                    Debug.Log("2차");
-                    Instantiate(Cancer, spawnVec, Cancer.transform.rotation);
+                    Enemy = Instantiate(Cancer, spawnVec, Cancer.transform.rotation);
                     break;
 
                 default:
-                    Debug.Log("오류");
                     break;
             }
+
+            if (EnemyDatas[i].MoveDir != 0)
+            {
+                Debug.Log(EnemyDatas[i].MoveDir);
+                StartCoroutine(Move(Enemy, EnemyDatas[i].SpawnPos, EnemyDatas[i].MoveDir, EnemyDatas[i].WaitTime));
+            }
+        }
+
+        StopCoroutine(EnemySpawn());
+    }
+
+    public IEnumerator Move(GameObject Enemy, int curPos, int MoveDir, float WaitTime)
+    {
+        //Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
+        yield return new WaitForSeconds(WaitTime);
+
+        while (true)
+        {
+            yield return null;
+            Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
+
+            Enemy.transform.position = Vector3.MoveTowards(Enemy.gameObject.transform.position, TargetPos, 40 * Time.deltaTime);
         }
     }
 }

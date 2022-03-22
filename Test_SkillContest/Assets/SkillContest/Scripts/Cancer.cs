@@ -13,7 +13,12 @@ public class Cancer : Enemy
     // Update is called once per frame
     void Update()
     {
-        
+        EnemyMove();
+    }
+
+    protected override void EnemyMove()
+    {
+        this.gameObject.transform.Translate(0, 0, -MoveSpeed * Time.deltaTime);
     }
 
     protected override void Attack()
