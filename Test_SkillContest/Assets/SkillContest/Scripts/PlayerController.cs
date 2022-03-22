@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float MinX, MaxX;
     [SerializeField]
-    private float MinZ, MaxZ;
+    private float MinY, MaxY;
 
-    public float MoveSpeed = 10;
+    public float MoveSpeed;
 
     [Header("플레이어 공격")]
     [SerializeField]
@@ -45,38 +45,23 @@ public class PlayerController : MonoBehaviour
 
     void PlayerMove()
     {
-        float CurMinZ = this.gameObject.transform.position.z - 30.0f;
-
-        Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
-        if (MoveDir.z == 0)
-        {
-            this.gameObject.transform.Translate(new Vector3(MoveDir.x, 0, 1 * MoveSpeed / 2.5f) * Time.deltaTime);
-        }
-
+        Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetKey(KeyCode.LeftShift) ? 1 : 0.4f);
 
         #region 플레이어 메인 움직임
-        if (this.gameObject.transform.position.z >= MinZ || MoveDir.z >= 0)
-        {
-            this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
+        this.gameObject.transform.Translate(MoveDir * MoveSpeed * Time.deltaTime);
 
-            this.gameObject.transform.position = new Vector3(Mathf.Clamp(this.gameObject.transform.position.x, MinX, MaxX)
-                , 1
-                , Mathf.Clamp(this.gameObject.transform.position.z, MinZ, MaxZ));
-        }
+        this.gameObject.transform.position = new Vector3(Mathf.Clamp(this.gameObject.transform.position.x, MinX, MaxX)
+            , Mathf.Clamp(this.gameObject.transform.position.y, MinY, MaxY)
+            , this.gameObject.transform.position.z);
+
         #endregion
-
-        if (MoveDir.z >= 0 && CurMinZ >= 0)
-        {
-            MinZ = CurMinZ;
-        }
     }
 
     void PlayerAttack()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            GameObject Bullet = Instantiate(PlayerBullet, this.gameObject.transform.position , Quaternion.identity);
+            GameObject Bullet = Instantiate(PlayerBullet, this.gameObject.transform.position, Quaternion.identity);
             Bullet.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * BulletSpeed, ForceMode.Impulse);
         }
     }
