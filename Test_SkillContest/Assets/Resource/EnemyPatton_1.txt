@@ -1,0 +1,8 @@
+0,Cancer,0
+0,Cancer,5
+0,Cancer,10
+0,Cancer,15
+0,Cancer,3
+0,Cancer,6	
+0,Cancer,9
+0,Cancer,12
