@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
 
 
     public int hp = 0;
+    public int ShieldCnt = 0;
 
     public int Hp 
     { 
@@ -17,11 +18,19 @@ public abstract class Enemy : MonoBehaviour
 
         set 
         {
-            hp = value;
-
-            if(hp <= 0)
+            if (ShieldCnt <= 0)
             {
-                Ondie();
+                hp = value;
+
+                if (hp <= 0)
+                {
+                    Ondie();
+                }
+            }
+
+            else
+            {
+                ShieldCnt--;
             }
         } 
     }

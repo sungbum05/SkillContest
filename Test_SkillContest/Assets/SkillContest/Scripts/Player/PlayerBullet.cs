@@ -20,8 +20,10 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Enemy")
+        if(other.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Ok");
+
             Attack(PlayerBulletPower, other.gameObject);
             DestroyBullet();
         }
