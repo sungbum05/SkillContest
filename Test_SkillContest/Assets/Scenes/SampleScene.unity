@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 975473206}
   - component: {fileID: 975473205}
   - component: {fileID: 975473204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2034,15 +2034,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16261774
+      value: 0.16261773
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008488675
+      value: -0.000000008488675
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000013990316
+      value: 0.0000000013990313
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2069,7 +2069,7 @@ GameObject:
   - component: {fileID: 1230527306}
   - component: {fileID: 1230527308}
   - component: {fileID: 1230527307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2181,7 +2181,7 @@ GameObject:
   - component: {fileID: 1253642863}
   - component: {fileID: 1253642862}
   - component: {fileID: 1253642861}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2389,7 +2389,7 @@ GameObject:
   - component: {fileID: 1314738183}
   - component: {fileID: 1314738182}
   - component: {fileID: 1314738181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7646,7 +7646,7 @@ GameObject:
   - component: {fileID: 1495065317}
   - component: {fileID: 1495065316}
   - component: {fileID: 1495065315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8536,9 +8536,10 @@ MonoBehaviour:
   MaxX: 65
   MinY: -70
   MaxY: 90
-  MoveSpeed: 90
+  MoveSpeed: 95
   PlayerBullet: {fileID: 2595445967275632774, guid: 59be5d526f929e146b03784ef228de55, type: 3}
-  BulletSpeed: 400
+  BulletPower: 10
+  BulletSpeed: 500
   rigidbody: {fileID: 1496992952}
 --- !u!1 &1500098484
 GameObject:
@@ -9888,7 +9889,7 @@ GameObject:
   - component: {fileID: 1686369221}
   - component: {fileID: 1686369220}
   - component: {fileID: 1686369219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10128,7 +10129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858252605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10406,7 +10407,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932844693}
-  m_LocalRotation: {x: 0.16261774, y: 0.000000008488675, z: -0.0000000013990316, w: 0.98668915}
+  m_LocalRotation: {x: 0.16261773, y: -0.000000008488675, z: 0.0000000013990313, w: 0.98668915}
   m_LocalPosition: {x: 0, y: 17.02, z: -24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10425,7 +10426,7 @@ GameObject:
   - component: {fileID: 2029937213}
   - component: {fileID: 2029937215}
   - component: {fileID: 2029937214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10506,7 +10507,7 @@ GameObject:
   - component: {fileID: 2044118749}
   - component: {fileID: 2044118751}
   - component: {fileID: 2044118750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

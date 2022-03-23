@@ -118,7 +118,6 @@ public class EnemySpanwer : MonoBehaviour
 
             if (EnemyDatas[i].MoveDir != 0)
             {
-                Debug.Log(EnemyDatas[i].MoveDir);
                 StartCoroutine(Move(Enemy, EnemyDatas[i].SpawnPos, EnemyDatas[i].MoveDir, EnemyDatas[i].WaitTime));
             }
         }
@@ -129,6 +128,7 @@ public class EnemySpanwer : MonoBehaviour
     public IEnumerator Move(GameObject Enemy, int curPos, int MoveDir, float WaitTime)
     {
         //Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
+
         yield return new WaitForSeconds(WaitTime);
 
         while (true)
@@ -136,7 +136,19 @@ public class EnemySpanwer : MonoBehaviour
             yield return null;
             Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
 
-            Enemy.transform.position = Vector3.MoveTowards(Enemy.gameObject.transform.position, TargetPos, 40 * Time.deltaTime);
+            //yield return new WaitForSeconds(WaitTime);
+            Enemy.transform.position = Vector3.MoveTowards(Enemy.gameObject.transform.position, TargetPos, 15 * Time.deltaTime);
+
+            if (Enemy.transform.position.Equals(TargetPos))
+            {
+                yield return new WaitForSeconds(WaitTime);
+
+                curPos += MoveDir;
+
+                MoveDir *= -1;
+
+                Debug.Log(MoveDir);
+            }
         }
     }
 }
