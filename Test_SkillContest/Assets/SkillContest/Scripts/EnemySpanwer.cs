@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class EnemySpanwer : MonoBehaviour
 {
+    [Header("몹 종류")]
+    [SerializeField] private GameObject Bacteria;
     [SerializeField] private GameObject Cancer;
+    [SerializeField] private GameObject EventWall_1;
 
+    [Header("스폰 데이터")]
     [SerializeField] private List<Transform> SpawnPoint;
 
     [SerializeField] private List<EnemyData> EnemyDatas;
@@ -96,8 +100,16 @@ public class EnemySpanwer : MonoBehaviour
 
             switch (EnemyDatas[i].SpawnType)
             {
+                case "Bacteria":
+                    Enemy = Instantiate(Bacteria, spawnVec, Bacteria.transform.rotation);
+                    break;
+
                 case "Cancer":
                     Enemy = Instantiate(Cancer, spawnVec, Cancer.transform.rotation);
+                    break;
+
+                case "EventWall_1":
+                    Enemy = Instantiate(EventWall_1, spawnVec, EventWall_1.transform.rotation);
                     break;
 
                 default:
