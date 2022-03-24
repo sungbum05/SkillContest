@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyATBullet : MonoBehaviour
 {
     public int BulletPower;
+    public bool Fire = false;
 
     public Transform PlayerTr;
     public Rigidbody ballrigid;
@@ -12,12 +13,21 @@ public class EnemyATBullet : MonoBehaviour
     public float ballvelocity;
 
     // Start is called before the first frame update
+    private void Start()
+    {
+        PlayerTr = GameObject.Find("Player").transform;
+
+        //Destroy(this.gameObject, 5.0f);
+    }
 
     // Update is called once per frame
     public void FixedUpdate()
     {
-        ballrigid.velocity = transform.forward * ballvelocity;
-        var ballTargetRotation = Quaternion.LookRotation(PlayerTr.position + new Vector3(0, 0, 8.0f) - transform.position);
+        if(Fire == true)
+        {
+            //Debug.Log("Fire");
+            FireBullet();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,5 +37,12 @@ public class EnemyATBullet : MonoBehaviour
             other.gameObject.GetComponent<PlayerController>().HP -= BulletPower;
             Destroy(this.gameObject);
         }
+    }
+
+    public void FireBullet()
+    {
+        ballrigid.velocity = transform.forward * ballvelocity;
+        var ballTargetRotation = Quaternion.LookRotation(PlayerTr.position + new Vector3(0, 0, 8.0f) - transform.position);
+        ballrigid.MoveRotation(Quaternion.RotateTowards(transform.rotation, ballTargetRotation, turn));
     }
 }

@@ -31,7 +31,7 @@ public class Germ : Enemy
 
     protected override IEnumerator Attack()
     {
-        Target = GameObject.Find("Player").transform;
+        base.GetTarget();
 
         while(true)
         {

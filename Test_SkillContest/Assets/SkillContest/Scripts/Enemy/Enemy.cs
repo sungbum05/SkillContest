@@ -77,4 +77,9 @@ public abstract class Enemy : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    protected void GetTarget()
+    {
+        Target = GameObject.Find("Player").transform;
+    }
 }

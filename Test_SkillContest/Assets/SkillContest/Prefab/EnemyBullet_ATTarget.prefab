@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1365608390604148657}
   - component: {fileID: 1365608390604148656}
   - component: {fileID: 1365608390604148660}
+  - component: {fileID: -6169192171654726435}
   m_Layer: 0
   m_Name: EnemyBullet_ATTarget
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3f067ff713b7b145927c20743c31c81, type: 2}
+  - {fileID: 2100000, guid: f5cf34ac5bfa4764d9e44da5990854a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,6 +115,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-6169192171654726435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365608390604148659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661f4389d04653446a2394d0943fd1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPower: 0
+  Fire: 0
+  PlayerTr: {fileID: 0}
+  ballrigid: {fileID: 1365608390604148660}
+  turn: 20
+  ballvelocity: 60
 --- !u!1 &1365608391179836799
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,8 +235,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.7760959, g: 0.2971698, b: 1, a: 1}
-      key1: {r: 1, g: 0.59851366, b: 0.4009434, a: 0.5529412}
+      key0: {r: 0, g: 0.36091572, b: 0.3773585, a: 1}
+      key1: {r: 0, g: 0.5849056, b: 0.04773775, a: 0.5529412}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
