@@ -16,8 +16,11 @@ public class EnemyATBullet : MonoBehaviour
     private void Start()
     {
         PlayerTr = GameObject.Find("Player").transform;
+    }
 
-        //Destroy(this.gameObject, 5.0f);
+    private void OnDestroy()
+    {
+        Debug.Log("Destroy");
     }
 
     // Update is called once per frame
@@ -42,7 +45,12 @@ public class EnemyATBullet : MonoBehaviour
     public void FireBullet()
     {
         ballrigid.velocity = transform.forward * ballvelocity;
-        var ballTargetRotation = Quaternion.LookRotation(PlayerTr.position + new Vector3(0, 0, 8.0f) - transform.position);
+        var ballTargetRotation = Quaternion.LookRotation(PlayerTr.position + new Vector3(0, 0, 0.8f) - transform.position);
         ballrigid.MoveRotation(Quaternion.RotateTowards(transform.rotation, ballTargetRotation, turn));
+    }
+
+    public void ThisDestroy()
+    {
+        Destroy(this.gameObject, 5.0f);
     }
 }

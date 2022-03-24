@@ -7,6 +7,7 @@ public class Cancer : Enemy
     public int ShotCnt;
 
     public GameObject BulletZip;
+    public GameObject DesBulletZip;
 
     [SerializeField]
     List<GameObject> Bullets;
@@ -27,6 +28,11 @@ public class Cancer : Enemy
     protected override void EnemyMove()
     {
         this.gameObject.transform.Translate(0, 0, -MoveSpeed * Time.deltaTime);
+
+        if (Bullets.Count >= ShotCnt)
+        {
+            BulletZip.transform.Rotate(0, 0, 130 * Time.deltaTime);
+        }
     }
 
     protected override IEnumerator Attack()
@@ -39,9 +45,12 @@ public class Cancer : Enemy
 
         while (true)
         {
+            yield return null;
             AttackRange = Vector3.Distance(this.gameObject.transform.position, Target.position);
 
-            if (AttackRange <= 600)
+            Debug.Log(Bullets.Count);
+
+            if (AttackRange <= 700 && Bullets.Count <= 0)
             {
                 yield return new WaitForSeconds(AttackDelay);
 
@@ -53,6 +62,7 @@ public class Cancer : Enemy
 
                     Bullet.GetComponent<EnemyATBullet>().BulletPower = AttckPower;
                     Bullet.GetComponent<EnemyATBullet>().ballvelocity = BulletSpeed;
+
                     Bullet.transform.parent = BulletZip.transform;
 
                     Bullet.transform.rotation = Quaternion.Euler(0, 0, Angle);
@@ -60,13 +70,13 @@ public class Cancer : Enemy
                     Angle -= 360 / ShotCnt;
 
                     StartCoroutine(Movebullet(Bullet));
+
+                    yield return new WaitForSeconds(AttackDelay / ShotCnt);
                 }
 
                 Angle = 360;
+                StartCoroutine(StartAttck());
             }
-
-            if (Bullets.Count > 0)
-                BulletZip.transform.Rotate(0, 0, 90 * Time.deltaTime);
         }
     }
 
@@ -75,25 +85,46 @@ public class Cancer : Enemy
 
     }
 
+    IEnumerator StartAttck()
+    {
+        yield return new WaitForSeconds(AttackDelay * 2);
+
+        foreach(GameObject Bullet in Bullets)
+        {
+            Bullet.transform.parent = DesBulletZip.transform;
+
+            Bullet.GetComponent<EnemyATBullet>().Fire = true;
+            Bullet.GetComponent<EnemyATBullet>().ThisDestroy();
+
+            yield return new WaitForSeconds(AttackDelay/ShotCnt);
+
+            //Bullet.transform.paren
+        }
+
+        Bullets.Clear();
+        BulletZip.transform.rotation = Quaternion.Euler(0, 0, 0);
+        StopCoroutine(StartAttck());
+    }
+
     IEnumerator Movebullet(GameObject Bullet)
     {
-        Vector3 GotoBulletPos = Bullet.transform.position + (Bullet.transform.up * 20);
+        Vector3 GotoBulletPos = Bullet.transform.up * 25;
 
         while (true)
         {
             yield return null;
 
-            if (GotoBulletPos == Bullet.gameObject.transform.position)
+            if (Mathf.Approximately(Bullet.transform.position.x, this.transform.position.x + GotoBulletPos.x))
+            {
+                Bullets.Add(Bullet);
                 break;
-                
+            }      
 
-            Bullet.gameObject.transform.position = Vector3.MoveTowards(Bullet.transform.position, GotoBulletPos, 30 * Time.deltaTime);
+            Bullet.gameObject.transform.position = Vector3.MoveTowards(Bullet.transform.position, this.transform.position + GotoBulletPos, 30 * Time.deltaTime);
 
             //Debug.Log(GotoBulletPos);
-            Debug.Log(Bullet.transform.position);
         }
 
-        Bullets.Add(Bullet);
         StopCoroutine(Movebullet(Bullet));
     }
 }

@@ -25,6 +25,6 @@ public class GameManager : MonoBehaviour
     void SendEnemyData()
     {
         enemySpanwer.ReadEnemyData(
-            Resources.Load<TextAsset>($"EnemyPatton_4").text);
+            Resources.Load<TextAsset>($"EnemyPatton_6").text);
     }
 }
