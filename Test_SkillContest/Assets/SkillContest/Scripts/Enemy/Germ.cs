@@ -17,7 +17,7 @@ public class Germ : Enemy
     void Start()
     {
         Hp = 30;
-        ShieldCnt = 2;
+        ShieldCnt = 1;
 
         StartCoroutine(Attack());
     }
@@ -38,12 +38,12 @@ public class Germ : Enemy
             AttackRange = Vector3.Distance(this.gameObject.transform.position, Target.position); 
 
             yield return null;
-            if (ShieldCnt <= 0 && AttackRange <= 350)
+            if (ShieldCnt <= 0 && AttackRange <= 500)
             {
                 foreach (Transform Pos in FirePos)
                 {
-                    Debug.Log(Pos.position);
                     yield return new WaitForSeconds(AttackDelay);
+
                     GameObject Bullet = Instantiate(EnemyBullet, Pos.position, EnemyBullet.transform.rotation);
                     Bullet.GetComponent<Rigidbody>().AddForce((-1 * Bullet.transform.forward) * BulletSpeed, ForceMode.Impulse);
                     Bullet.GetComponent<EnemyBullet>().BulletPower = AttckPower;

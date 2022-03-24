@@ -7,6 +7,7 @@ public class EnemySpanwer : MonoBehaviour
 {
     [Header("¸÷ Á¾·ù")]
     [SerializeField] private GameObject Bacteria;
+    [SerializeField] private GameObject Germ;
     [SerializeField] private GameObject Cancer;
     [SerializeField] private GameObject EventWall_1;
 
@@ -102,6 +103,10 @@ public class EnemySpanwer : MonoBehaviour
             {
                 case "Bacteria":
                     Enemy = Instantiate(Bacteria, spawnVec, Bacteria.transform.rotation);
+                    break;
+
+                case "Germ":
+                    Enemy = Instantiate(Germ, spawnVec, Germ.transform.rotation);
                     break;
 
                 case "Cancer":
