@@ -21,9 +21,9 @@ public class Cancer : Enemy
         this.gameObject.transform.Translate(0, 0, -MoveSpeed * Time.deltaTime);
     }
 
-    protected override void Attack(GameObject Player)
+    protected override IEnumerator Attack()
     {
-        
+        yield return null;
     }
 
     protected override void EnemyPatton()

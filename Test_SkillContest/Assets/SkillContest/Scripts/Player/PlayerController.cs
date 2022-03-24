@@ -4,6 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("플레이어 상태")]
+    [SerializeField]
+    private int hp;
+
+    public int HP { 
+
+        get 
+        { 
+            return hp; 
+        }
+
+        set
+        {
+            hp = value;
+
+            if(hp <= 0)
+            {
+                OnDie();
+            }
+        }
+    }
+
     [Header("플레이어 움직임")]
     [SerializeField]
     private Transform[] Left_wheels;
@@ -32,6 +54,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HP = 100;
+
         StartCoroutine(LeftWheelRotate());
         StartCoroutine(RightWheelRotate());
         StartCoroutine(PlayerRotate());
@@ -206,5 +230,14 @@ public class PlayerController : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void OnDie()
+    {
+        MoveSpeed = 0;
+
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
     }
 }

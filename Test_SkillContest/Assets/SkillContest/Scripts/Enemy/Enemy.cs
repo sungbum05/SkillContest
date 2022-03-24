@@ -37,6 +37,12 @@ public abstract class Enemy : MonoBehaviour
 
     [Header("Àû °ø°Ý")]
     [SerializeField]
+    protected Transform Target;
+
+    [SerializeField]
+    protected GameObject EnemyBullet;
+
+    [SerializeField]
     protected float AttackDelay;
 
     [SerializeField]
@@ -44,6 +50,9 @@ public abstract class Enemy : MonoBehaviour
 
     [SerializeField]
     protected int AttckPower;
+
+    [SerializeField]
+    protected int BulletSpeed;
 
 
     // Start is called before the first frame update
@@ -58,7 +67,7 @@ public abstract class Enemy : MonoBehaviour
         
     }
 
-    protected abstract void Attack(GameObject Player);
+    protected abstract IEnumerator Attack();
 
     protected abstract void EnemyPatton();
 

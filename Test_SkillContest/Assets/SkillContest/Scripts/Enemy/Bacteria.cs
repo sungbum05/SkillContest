@@ -16,9 +16,9 @@ public class Bacteria : Enemy
         EnemyMove();
     }
 
-    protected override void Attack(GameObject Player)
+    protected override IEnumerator Attack()
     {
-        
+        yield return null;
     }
 
     protected override void EnemyMove()

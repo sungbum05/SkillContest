@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class Germ : Enemy
 {
+
+    [Header("Germ 고유 속성")]
     [SerializeField] GameObject Shield;
+
+    [SerializeField] GameObject ShieldForm;
+    [SerializeField] GameObject GunForm;
+
+    [SerializeField] List<Transform> FirePos;
 
     // Start is called before the first frame update
     void Start()
     {
         Hp = 30;
-        ShieldCnt = 1;
+        ShieldCnt = 2;
+
+        StartCoroutine(Attack());
     }
 
     // Update is called once per frame
@@ -20,9 +29,27 @@ public class Germ : Enemy
         EnemyPatton();
     }
 
-    protected override void Attack(GameObject Player)
+    protected override IEnumerator Attack()
     {
-        
+        Target = GameObject.Find("Player").transform;
+
+        while(true)
+        {
+            AttackRange = Vector3.Distance(this.gameObject.transform.position, Target.position); 
+
+            yield return null;
+            if (ShieldCnt <= 0 && AttackRange <= 350)
+            {
+                foreach (Transform Pos in FirePos)
+                {
+                    Debug.Log(Pos.position);
+                    yield return new WaitForSeconds(AttackDelay);
+                    GameObject Bullet = Instantiate(EnemyBullet, Pos.position, EnemyBullet.transform.rotation);
+                    Bullet.GetComponent<Rigidbody>().AddForce((-1 * Bullet.transform.forward) * BulletSpeed, ForceMode.Impulse);
+                    Bullet.GetComponent<EnemyBullet>().BulletPower = AttckPower;
+                }
+            }
+        }
     }
 
     protected override void EnemyMove()
@@ -32,17 +59,18 @@ public class Germ : Enemy
 
     protected override void EnemyPatton()
     {
-        Shield.transform.Rotate(0, 90 * Time.deltaTime, 0);
-
-
         if (ShieldCnt > 0)
         {
-            Shield.SetActive(true);
+            ShieldForm.SetActive(true);
+            GunForm.SetActive(false);
+
+            Shield.transform.Rotate(0, 90 * Time.deltaTime, 0);
         }
 
         else
         {
-            Shield.SetActive(false);
+            ShieldForm.SetActive(false);
+            GunForm.SetActive(true);
         }
     }
 }

@@ -959,7 +959,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560510077}
-  m_LocalRotation: {x: -0.49864212, y: 0.00000003112843, z: 0.000000017907018, w: 0.866808}
+  m_LocalRotation: {x: -0.49864212, y: 0.0000000311284, z: 0.000000017907002, w: 0.866808}
   m_LocalPosition: {x: 0, y: 17.02, z: -24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9008,6 +9008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d8b032b1af7bc4985f6ce9dfd59a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   Left_wheels:
   - {fileID: 1500394448}
   - {fileID: 1500394464}
@@ -9054,8 +9055,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.3091927, y: 1, z: 4.608241}
-  m_Center: {x: 0.0640653, y: 0.75, z: -0.15999413}
+  m_Size: {x: 3.3091927, y: 1.5810275, z: 4.608241}
+  m_Center: {x: 0.0640653, y: 0.90871406, z: -0.15999413}
 --- !u!1 &1500098486
 GameObject:
   m_ObjectHideFlags: 0
@@ -9343,7 +9344,7 @@ Transform:
   - {fileID: 469539237}
   - {fileID: 1573465245}
   m_Father: {fileID: 1500394442}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1500394438
 Transform:
@@ -9384,10 +9385,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
-  - {fileID: 1500394494}
-  - {fileID: 1500394490}
-  - {fileID: 1500394488}
   - {fileID: 1500394432}
+  - {fileID: 1500394490}
+  - {fileID: 1500394494}
+  - {fileID: 1500394488}
   - {fileID: 1247126722}
   - {fileID: 1014701142}
   - {fileID: 1228412755}
@@ -9632,7 +9633,7 @@ Transform:
   - {fileID: 1500394438}
   - {fileID: 1500394424}
   m_Father: {fileID: 1500394442}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1500394490
 Transform:
@@ -9667,7 +9668,7 @@ Transform:
   - {fileID: 1500394454}
   - {fileID: 1500394450}
   m_Father: {fileID: 1500394442}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &1505160760
 WheelCollider:
@@ -10960,7 +10961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468639847781232458, guid: 1f923ba46cf45674c843145fc507b0df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1301
       objectReference: {fileID: 0}
     - target: {fileID: 1468639847781232458, guid: 1f923ba46cf45674c843145fc507b0df, type: 3}
       propertyPath: m_LocalRotation.w
