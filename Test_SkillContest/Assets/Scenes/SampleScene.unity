@@ -715,7 +715,6 @@ GameObject:
   - component: {fileID: 291920871}
   - component: {fileID: 291920874}
   - component: {fileID: 291920873}
-  - component: {fileID: 291920872}
   m_Layer: 0
   m_Name: VirusHead
   m_TagString: Untagged
@@ -737,19 +736,6 @@ Transform:
   m_Father: {fileID: 1812005490}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &291920872
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291920870}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &291920873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1723,7 +1709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2160228260155716564, guid: 5f5a8dd65861eec4caed46d94c797186, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100
+      value: 164.8
       objectReference: {fileID: 0}
     - target: {fileID: 2160228260155716564, guid: 5f5a8dd65861eec4caed46d94c797186, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2575,7 +2561,6 @@ GameObject:
   - component: {fileID: 1118276675}
   - component: {fileID: 1118276678}
   - component: {fileID: 1118276677}
-  - component: {fileID: 1118276676}
   m_Layer: 0
   m_Name: VirusBody
   m_TagString: Untagged
@@ -2597,19 +2582,6 @@ Transform:
   m_Father: {fileID: 1812005490}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1118276676
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118276674}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1118276677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11079,6 +11051,7 @@ GameObject:
   - component: {fileID: 1812005490}
   - component: {fileID: 1812005492}
   - component: {fileID: 1812005491}
+  - component: {fileID: 1812005493}
   m_Layer: 0
   m_Name: Virus
   m_TagString: Enemy
@@ -11095,13 +11068,13 @@ Transform:
   m_GameObject: {fileID: 1812005489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 26.19}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 291920871}
   - {fileID: 1118276675}
   - {fileID: 1851696758}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1812005491
 BoxCollider:
@@ -11132,6 +11105,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1812005493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812005489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2717d3973924168479f0da5b78c3396d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 2
+  hp: 0
+  ShieldCnt: 0
+  Target: {fileID: 0}
+  EnemyBullet: {fileID: 1365608390604148659, guid: 73f6149ad507f98439f0334d439b8378, type: 3}
+  AttackDelay: 2
+  AttackRange: 500
+  AttckPower: 10
+  BulletSpeed: 100
+  ShotCnt: 1
+  MaxShotCnt: 5
 --- !u!1 &1824157154
 GameObject:
   m_ObjectHideFlags: 0
@@ -11587,7 +11583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029937212
 GameObject:
@@ -11841,7 +11837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2096743342842809652, guid: 528c437b58266f442964187a112f9038, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100
+      value: 263.4
       objectReference: {fileID: 0}
     - target: {fileID: 2096743342842809652, guid: 528c437b58266f442964187a112f9038, type: 3}
       propertyPath: m_LocalRotation.w

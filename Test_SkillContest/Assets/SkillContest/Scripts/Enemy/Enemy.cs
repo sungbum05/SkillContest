@@ -54,6 +54,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected int BulletSpeed;
 
+    public int ShotCnt;
+
 
     // Start is called before the first frame update
     void Start()

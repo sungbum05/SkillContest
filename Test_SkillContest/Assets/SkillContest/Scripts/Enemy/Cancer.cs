@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Cancer : Enemy
 {
-    public int ShotCnt;
-
     public GameObject BulletZip;
     public GameObject DesBulletZip;
 
