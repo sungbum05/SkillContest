@@ -27,6 +27,12 @@ public class PlayerBullet : MonoBehaviour
             Attack(PlayerBulletPower, other.gameObject);
             DestroyBullet();
         }
+
+        if(other.gameObject.CompareTag("EnemyBullet"))
+        {
+            other.GetComponent<Bullet>().HP--;
+            DestroyBullet();
+        }
     }
 
 

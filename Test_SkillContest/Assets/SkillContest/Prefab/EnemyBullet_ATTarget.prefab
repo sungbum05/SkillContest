@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6169192171654726435}
   m_Layer: 0
   m_Name: EnemyBullet_ATTarget
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPower: 0
   Fire: 0
+  IsHoming: 0
   PlayerTr: {fileID: 0}
   ballrigid: {fileID: 1365608390604148660}
   turn: 20
@@ -313,9 +314,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9716981, g: 0, b: 0.6575366, a: 1}
-  m_Intensity: 1
-  m_Range: 876.56
+  m_Color: {r: 0, g: 0.754717, b: 0.39947006, a: 1}
+  m_Intensity: 15
+  m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

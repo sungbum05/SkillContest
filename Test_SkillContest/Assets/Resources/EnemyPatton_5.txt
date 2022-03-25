@@ -1,0 +1,4 @@
+0,Cancer,2,None,2
+0,Cancer,14,None,2
+0,Bacteria,4,Right,2
+0,Bacteria,7,Left,2

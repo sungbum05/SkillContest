@@ -1,123 +1,160 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 16316 MB
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 15776 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-F:\2020.3.30f1\Editor\Unity.exe
+C:\Users\user\Documents\Unity\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-F:/포폴폴더/Fork/SkillContest/Test_SkillContest
+C:/Users/user/Documents/Fork/SkillContests/Test_SkillContest
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60291
-Successfully changed project path to: F:/포폴폴더/Fork/SkillContest/Test_SkillContest
-F:/포폴폴더/Fork/SkillContest/Test_SkillContest
+50510
+Successfully changed project path to: C:/Users/user/Documents/Fork/SkillContests/Test_SkillContest
+C:/Users/user/Documents/Fork/SkillContests/Test_SkillContest
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.78 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
-[Subsystems] Discovering subsystems at path F:/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path F:/포폴폴더/Fork/SkillContest/Test_SkillContest/Assets
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/Fork/SkillContests/Test_SkillContest/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Renderer: AMD Radeon RX 6800M (ID=0x73df)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5671
+    VRAM:     11987 MB
+    Driver:   27.20.22001.24003
 Initialize mono
-Mono path[0] = 'F:/2020.3.30f1/Editor/Data/Managed'
-Mono path[1] = 'F:/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'F:/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Mono path[0] = 'C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: F:/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003736 seconds.
+Register platform support module: C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/user/Documents/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001787 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.79 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 34.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.654 seconds
+- Completed reload, in  0.422 seconds
 Domain Reload Profiling:
-	ReloadAssembly (654ms)
-		BeginReloadAssembly (137ms)
+	ReloadAssembly (422ms)
+		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (440ms)
-			LoadAssemblies (133ms)
+		EndReloadAssembly (326ms)
+			LoadAssemblies (44ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (139ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (161ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (130ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (72ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (35ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (59ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004132 seconds.
+Registered in 0.002569 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001AA13DF4550 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13ED7C20 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F3A640 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13172020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13172020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13EECE30 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF0220 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13AC3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF0220 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13AC3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF0220 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13172020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13EECE30 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13760030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13DF4550 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13480580 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1523F010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.10 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.223 seconds
+- Completed reload, in  0.791 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1225ms)
-		BeginReloadAssembly (219ms)
+	ReloadAssembly (792ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (937ms)
-			LoadAssemblies (175ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (646ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
+			SetupTypeCache (182ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (387ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (293ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (229ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				RefreshPlugins (33ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 179.1 MB.
-System memory in use after: 178.9 MB.
+System memory in use before: 181.8 MB.
+System memory in use after: 181.6 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2612.
-Total: 3.398400 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.106900 ms MarkObjects: 2.781200 ms  DeleteObjects: 0.298300 ms)
+Total: 2.618000 ms (FindLiveObjects: 0.169800 ms CreateObjectMapping: 0.050700 ms MarkObjects: 2.201800 ms  DeleteObjects: 0.195100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,93 +168,476 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/ThirdAsset/StarterAssets/Readme.asset
+  artifactKey: Guid(4181bfe715a83e843b7538d750dc57cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdAsset/StarterAssets/Readme.asset using Guid(4181bfe715a83e843b7538d750dc57cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13167d1a8141c6a91ea2a8d07c3902f8') in 0.026597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.885259 seconds.
   path: Assets/Resources/MiniMap.renderTexture
   artifactKey: Guid(985c9f092cb3a184f8e7413390b3bf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/MiniMap.renderTexture using Guid(985c9f092cb3a184f8e7413390b3bf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05295121a21316d535cd6af5c98eddbf') in 0.095612 seconds 
+Start importing Assets/Resources/MiniMap.renderTexture using Guid(985c9f092cb3a184f8e7413390b3bf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86179a760af0d8a8a3a451e0a7a952f') in 0.045013 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.718722 seconds.
-  path: Assets/SkillContest/Scripts/EnemySpanwer.cs
-  artifactKey: Guid(11678482af84c3047a222dc1bb373637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkillContest/Scripts/EnemySpanwer.cs using Guid(11678482af84c3047a222dc1bb373637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4cc9b12a66989bffc774beff9605f44') in 0.029987 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.08 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 137.6 MB.
-System memory in use after: 137.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2617.
-Total: 6.305100 ms (FindLiveObjects: 0.460000 ms CreateObjectMapping: 0.219600 ms MarkObjects: 5.187600 ms  DeleteObjects: 0.436600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 0.547479 seconds.
+  path: Assets/TaeHunAcademy/TestMat.mat
+  artifactKey: Guid(4bb0fcab1a6c88f44ae7a022d63a9781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TaeHunAcademy/TestMat.mat using Guid(4bb0fcab1a6c88f44ae7a022d63a9781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22b1929aef147d43a828fb96db9832f') in 0.047221 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.745074 seconds.
-  path: Assets/SkillContest/Scripts/GameManager.cs
-  artifactKey: Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkillContest/Scripts/GameManager.cs using Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aaeeff589e53cc26d430891d4e21e6') in 0.011345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.978847 seconds.
-  path: Assets/SkillContest/Scripts/GameManager.cs
-  artifactKey: Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkillContest/Scripts/GameManager.cs using Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f9f1b42494ae141c73b4ef887010c2') in 0.025176 seconds 
+  Time since last request: 2.318493 seconds.
+  path: Assets/SkillContest/Scripts
+  artifactKey: Guid(ada33e559e4047843aba1f8eec6c3a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts using Guid(ada33e559e4047843aba1f8eec6c3a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f009811ad06d386ad5c8d5361a6434') in 0.005659 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005203 seconds.
+Registered in 0.002360 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001AA13885420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13400020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12396A20 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA137D4010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14064040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13E0C010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C4E020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14F7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13629640 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA137D4010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13885420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13E2B420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17FE5030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.693 seconds
+Domain Reload Profiling:
+	ReloadAssembly (693ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (564ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.8 MB.
+System memory in use after: 182.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2658.
+Total: 2.618700 ms (FindLiveObjects: 0.167100 ms CreateObjectMapping: 0.050200 ms MarkObjects: 2.208900 ms  DeleteObjects: 0.191900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 96.899743 seconds.
+  path: Assets/SkillContest/Scripts/Enemy
+  artifactKey: Guid(2a8f42f4f72aff64fa06f020bf797733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/Enemy using Guid(2a8f42f4f72aff64fa06f020bf797733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2456cee78f799df4f428a1450ccf88') in 0.007718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.377815 seconds.
+  path: Assets/SkillContest/Scripts/Enemy/Cancer.cs
+  artifactKey: Guid(14953d82382148546b50cd9ae13aaa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/Enemy/Cancer.cs using Guid(14953d82382148546b50cd9ae13aaa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea97937c33b5569d349e625db95ef9c8') in 0.008041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.114302 seconds.
+  path: Assets/SkillContest/Scripts/Player
+  artifactKey: Guid(d39171d0b20279744806ae853803bd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/Player using Guid(d39171d0b20279744806ae853803bd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba9ca5ef6318fd4f432cc4471b6be96') in 0.006475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.975299 seconds.
+  path: Assets/SkillContest/Scripts/Enemy/EnemyATBullet.cs
+  artifactKey: Guid(661f4389d04653446a2394d0943fd1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/Enemy/EnemyATBullet.cs using Guid(661f4389d04653446a2394d0943fd1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a44b6aec9bb188c068ea388befda6e') in 0.005862 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002130 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA123AB670 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA149E6C00 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14064040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13BFA420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13DCD3F0 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14044020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13629640 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15EEC020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15EEC020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.690 seconds
+Domain Reload Profiling:
+	ReloadAssembly (690ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (562ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.8 MB.
+System memory in use after: 182.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2660.
+Total: 2.680600 ms (FindLiveObjects: 0.136000 ms CreateObjectMapping: 0.049100 ms MarkObjects: 2.255600 ms  DeleteObjects: 0.239000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 274.939073 seconds.
+  path: Assets/Tree 1.prefab
+  artifactKey: Guid(6e3b8f37bd6f0b142ba3712f5eff9161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree 1.prefab using Guid(6e3b8f37bd6f0b142ba3712f5eff9161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039e403b481ab0b867067cba2a464e3c') in 0.099980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Tree.prefab
+  artifactKey: Guid(0da6b86d3a379a24d8f4a3ab76461a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree.prefab using Guid(0da6b86d3a379a24d8f4a3ab76461a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19140b142b7710d41126914890cebf5d') in 0.045442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.579718 seconds.
+  path: Assets/Resources/EnemyPatton_4.txt
+  artifactKey: Guid(583f89ebee620fa4c9323e6b704f4fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_4.txt using Guid(583f89ebee620fa4c9323e6b704f4fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f1853f58bd62639378cedbf6fd0fdd') in 0.018492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.826136 seconds.
+  path: Assets/Resources/EnemyPatton_3.txt
+  artifactKey: Guid(2e9df574b6d2c1d448ae0d325100230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_3.txt using Guid(2e9df574b6d2c1d448ae0d325100230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b603a2c771b964dd00a3d56aa7a5be6') in 0.007374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.026675 seconds.
+  path: Assets/Resources/EnemyPatton_2.txt
+  artifactKey: Guid(ed66ba8b68d325f4b983ae96e8a20ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_2.txt using Guid(ed66ba8b68d325f4b983ae96e8a20ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76a2d906de6f69448cf08e695269d04') in 0.006452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.377311 seconds.
+  path: Assets/Resources/EnemyPatton_1.txt
+  artifactKey: Guid(e85e6292f3b772741bfac81c7f3cd4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_1.txt using Guid(e85e6292f3b772741bfac81c7f3cd4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0408fae47b18b662c92620f061dbf1e7') in 0.011307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.294136 seconds.
+  path: Assets/Resources/EnemyPatton_5.txt
+  artifactKey: Guid(a431164f603f40e4291fe02654e3e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_5.txt using Guid(a431164f603f40e4291fe02654e3e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dace0caea263e13114a0ece6422cb37b') in 0.006917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.405336 seconds.
+  path: Assets/Resources/EnemyPatton_5.txt
+  artifactKey: Guid(a431164f603f40e4291fe02654e3e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/EnemyPatton_5.txt using Guid(a431164f603f40e4291fe02654e3e469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75430c93969768b174138136f3d372c0') in 0.002853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.254312 seconds.
+  path: Assets/SkillContest/Matarial/Enemy/EnemyATBulletMat 1.mat
+  artifactKey: Guid(f5cf34ac5bfa4764d9e44da5990854a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Matarial/Enemy/EnemyATBulletMat 1.mat using Guid(f5cf34ac5bfa4764d9e44da5990854a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79769fbb89b18ff1fb7f779036ab1518') in 0.022287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/SkillContest/Matarial/Enemy/EnemyBulletMat.mat
+  artifactKey: Guid(d3f067ff713b7b145927c20743c31c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Matarial/Enemy/EnemyBulletMat.mat using Guid(d3f067ff713b7b145927c20743c31c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8ff43109d823e1054e3d02d4d13af7') in 0.018843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.538107 seconds.
+  path: Assets/SkillContest/Scripts/GameManager.cs
+  artifactKey: Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/GameManager.cs using Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a22c3e29c35772fc4148f9c4ee27378') in 0.011050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.830954 seconds.
+  path: Assets/SkillContest/Scripts/GameManager.cs
+  artifactKey: Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Scripts/GameManager.cs using Guid(c5a25f8a512cee54697a193836018d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa0ef9eb7ec274027d6d8c49469ade4') in 0.002676 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002197 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA18322050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19503830 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13A64010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13A64010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA137D4010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14064040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15960080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13A64010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12682020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160C6410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17CF9A30 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13EB4010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA163F00B0 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Domain Reload Profiling:
+	ReloadAssembly (713ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (577ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.9 MB.
+System memory in use after: 182.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2666.
+Total: 2.994300 ms (FindLiveObjects: 0.167300 ms CreateObjectMapping: 0.074600 ms MarkObjects: 2.483200 ms  DeleteObjects: 0.268400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002089 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA123AB670 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F45830 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E88040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E88040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14F7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18631030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E88040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13860010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14F7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C2A440 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17CE5020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17FE5030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.256 seconds
+- Completed reload, in  0.705 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1257ms)
-		BeginReloadAssembly (286ms)
+	ReloadAssembly (706ms)
+		BeginReloadAssembly (85ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (893ms)
-			LoadAssemblies (197ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (579ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
+			SetupTypeCache (185ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (343ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (237ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (227ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 179.7 MB.
-System memory in use after: 179.5 MB.
+System memory in use before: 182.9 MB.
+System memory in use after: 182.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2619.
-Total: 3.092800 ms (FindLiveObjects: 0.193900 ms CreateObjectMapping: 0.081100 ms MarkObjects: 2.542200 ms  DeleteObjects: 0.274600 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2668.
+Total: 2.875400 ms (FindLiveObjects: 0.170100 ms CreateObjectMapping: 0.074900 ms MarkObjects: 2.378100 ms  DeleteObjects: 0.251400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -231,7 +651,1518 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.092063 seconds.
-  path: Assets/Resources/EnemyPatton_6.txt
-  artifactKey: Guid(daffb31eed580e2438db30b5f6a611ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/EnemyPatton_6.txt using Guid(daffb31eed580e2438db30b5f6a611ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65798a1bbdc4f3fccdda6c37bd9f369') in 0.047964 seconds 
+  Time since last request: 71.475654 seconds.
+  path: Assets/SkillContest/Prefab/Bacteria.prefab
+  artifactKey: Guid(5f5a8dd65861eec4caed46d94c797186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/Bacteria.prefab using Guid(5f5a8dd65861eec4caed46d94c797186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712db7a25e4bb240f0e74b406ecd9531') in 0.074760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/SkillContest/Prefab/EnemyBullet.prefab
+  artifactKey: Guid(73f6149ad507f98439f0334d439b8378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/EnemyBullet.prefab using Guid(73f6149ad507f98439f0334d439b8378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191adfbc088f4674b997da74e0ac7bf2') in 0.020780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/SkillContest/Prefab/EventWall_1.prefab
+  artifactKey: Guid(c61193fecf0610046b0701965fbf026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/EventWall_1.prefab using Guid(c61193fecf0610046b0701965fbf026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05365edb93772c6fce3ebdeadcfcc2bf') in 0.027173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/SkillContest/Prefab/Germ.prefab
+  artifactKey: Guid(1f923ba46cf45674c843145fc507b0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/Germ.prefab using Guid(1f923ba46cf45674c843145fc507b0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad222d8381bf80f28900591f40f8aad') in 0.021792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/SkillContest/Prefab/PlayerBullet.prefab
+  artifactKey: Guid(59be5d526f929e146b03784ef228de55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/PlayerBullet.prefab using Guid(59be5d526f929e146b03784ef228de55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7240149571fa3b6a9b50f50fa1dd7a') in 0.029154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/SkillContest/Prefab/Cancer.prefab
+  artifactKey: Guid(528c437b58266f442964187a112f9038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/Cancer.prefab using Guid(528c437b58266f442964187a112f9038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab3aa6029ff8af1f6ccb7cde7c5de59') in 0.036528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/SkillContest/Prefab/EnemyBullet_ATTarget.prefab
+  artifactKey: Guid(986700384884a4e49a58d042c98537c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Prefab/EnemyBullet_ATTarget.prefab using Guid(986700384884a4e49a58d042c98537c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dd2d0bd7af0237875a33fa0c0cadbd') in 0.014943 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002298 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA18021040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F45830 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13494010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168BD040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13494010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13860010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168BD040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C2A440 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18021040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17CE5020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Domain Reload Profiling:
+	ReloadAssembly (698ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (573ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (239ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.0 MB.
+System memory in use after: 182.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2675.
+Total: 2.988500 ms (FindLiveObjects: 0.169300 ms CreateObjectMapping: 0.043700 ms MarkObjects: 2.484600 ms  DeleteObjects: 0.290100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002154 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA155E9040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F45830 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C0A430 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C0A430 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13DED410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C0A430 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13860010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14F7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C2A440 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA155E9040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17CE5020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Domain Reload Profiling:
+	ReloadAssembly (710ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2677.
+Total: 7.352100 ms (FindLiveObjects: 0.168100 ms CreateObjectMapping: 0.052700 ms MarkObjects: 6.837100 ms  DeleteObjects: 0.292900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002306 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA19500020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F45830 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13860010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C2A440 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19500020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17CE5020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (764ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (637ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (214ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2679.
+Total: 3.841500 ms (FindLiveObjects: 0.186100 ms CreateObjectMapping: 0.087900 ms MarkObjects: 3.271700 ms  DeleteObjects: 0.294900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002244 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15277080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA149D9010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA149D9010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13860010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160C6410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19258020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Domain Reload Profiling:
+	ReloadAssembly (742ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2681.
+Total: 2.749900 ms (FindLiveObjects: 0.152800 ms CreateObjectMapping: 0.051500 ms MarkObjects: 2.276200 ms  DeleteObjects: 0.268400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002230 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA198ED120 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA164BA020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA164BA020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E68020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA164BA020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13427010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C2A440 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1397B050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (778ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (649ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (268ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2683.
+Total: 2.722500 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.067800 ms MarkObjects: 2.207300 ms  DeleteObjects: 0.272900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002272 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15277080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA149D9010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15AA2030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13BFA420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA149D9010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13427010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA168F3010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E36080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14710080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1978F050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13BFA420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.729 seconds
+Domain Reload Profiling:
+	ReloadAssembly (729ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (597ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (177ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.0 MB.
+System memory in use after: 182.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2685.
+Total: 3.095600 ms (FindLiveObjects: 0.173900 ms CreateObjectMapping: 0.051400 ms MarkObjects: 2.587600 ms  DeleteObjects: 0.281800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002122 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12612960 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1526F070 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13BFA420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19A6E590 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15960080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160C6410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13CF8230 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B5D4020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1978F050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19B42020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.739 seconds
+Domain Reload Profiling:
+	ReloadAssembly (739ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (608ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (194ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2687.
+Total: 5.160700 ms (FindLiveObjects: 0.448000 ms CreateObjectMapping: 0.173400 ms MarkObjects: 4.093400 ms  DeleteObjects: 0.443200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002257 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12612960 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15960080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1611A020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15960080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1901C080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1978F050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Domain Reload Profiling:
+	ReloadAssembly (708ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (574ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (238ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2689.
+Total: 3.034100 ms (FindLiveObjects: 0.170500 ms CreateObjectMapping: 0.074400 ms MarkObjects: 2.496900 ms  DeleteObjects: 0.291500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002085 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13888030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15EFC030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15EFC030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15E68020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15EFC030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1901C080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Domain Reload Profiling:
+	ReloadAssembly (727ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (598ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (245ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2691.
+Total: 3.101300 ms (FindLiveObjects: 0.181000 ms CreateObjectMapping: 0.074800 ms MarkObjects: 2.572100 ms  DeleteObjects: 0.272800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002236 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12612960 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12177950 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1526F070 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13B1E010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15D68030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160EA020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (725ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (589ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (244ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2693.
+Total: 2.736600 ms (FindLiveObjects: 0.169700 ms CreateObjectMapping: 0.047400 ms MarkObjects: 2.238700 ms  DeleteObjects: 0.280100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002257 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12612960 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA164BA020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA147656D0 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13B1E010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15D68030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160C6410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5BA1C010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Domain Reload Profiling:
+	ReloadAssembly (742ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (612ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2695.
+Total: 2.757800 ms (FindLiveObjects: 0.144300 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.286000 ms  DeleteObjects: 0.275900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 433.748868 seconds.
+  path: Assets/SkillContest/Matarial/Alpha0.mat
+  artifactKey: Guid(d7078a98a4454d74f9db05edfd2e9b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Matarial/Alpha0.mat using Guid(d7078a98a4454d74f9db05edfd2e9b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b3bfe54da9532d0066b14e5a318a28') in 0.064563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/SkillContest/Matarial/Gray.mat
+  artifactKey: Guid(91955cb313a089340b31f42b66cf3d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Matarial/Gray.mat using Guid(91955cb313a089340b31f42b66cf3d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3872f37cd4e7bfdf899f522bd3f25337') in 0.017826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/SkillContest/Matarial/Black.mat
+  artifactKey: Guid(a6b456dcdfe96f74baa6c8516d1b3103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillContest/Matarial/Black.mat using Guid(a6b456dcdfe96f74baa6c8516d1b3103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b76e1d77952ba33a6d6d3fb2125ba5') in 0.015187 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002324 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA1506B020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA150FAAC0 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19662030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13B1E010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15685020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA160C6410 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18261030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (573ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 183.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2698.
+Total: 2.772000 ms (FindLiveObjects: 0.149300 ms CreateObjectMapping: 0.054700 ms MarkObjects: 2.297000 ms  DeleteObjects: 0.270300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002352 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA12158010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17FAE420 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13C0A430 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15D68030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13B1E010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15D68030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1901C080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12158010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1978F050 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.800 seconds
+Domain Reload Profiling:
+	ReloadAssembly (801ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (657ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (266ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 183.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2700.
+Total: 2.712300 ms (FindLiveObjects: 0.142800 ms CreateObjectMapping: 0.043300 ms MarkObjects: 2.243900 ms  DeleteObjects: 0.281600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002431 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA15D94190 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B630020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA196D9F00 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19662030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA150F0C90 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B5C2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA196D9F00 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA150F0C90 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18709080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA15D94190 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5BDF8870 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (760ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (583ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (240ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 183.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2702.
+Total: 2.711300 ms (FindLiveObjects: 0.146300 ms CreateObjectMapping: 0.050500 ms MarkObjects: 2.232600 ms  DeleteObjects: 0.281300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002364 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA18021040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5BB7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA124EC030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B5C2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19BE0210 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA17EAB110 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA1901C080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA12066030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18021040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18F08020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (580ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (239ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 183.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2704.
+Total: 2.798900 ms (FindLiveObjects: 0.165700 ms CreateObjectMapping: 0.051800 ms MarkObjects: 2.304700 ms  DeleteObjects: 0.275800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002242 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001AA12158010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA14AF7020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5BB7E040 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA196D9F00 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18E84060 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA150F0C90 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5BAE2610 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA196D9F00 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6A6090 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA150F0C90 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18709080 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA13F34020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA5B6E2010 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA18261030 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19765020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001AA19B42020 doesn't match image C:\Users\user\Documents\Fork\SkillContests\Test_SkillContest\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+Domain Reload Profiling:
+	ReloadAssembly (918ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (78ms)
+		EndReloadAssembly (705ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (215ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 182.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2706.
+Total: 7.655200 ms (FindLiveObjects: 0.235300 ms CreateObjectMapping: 0.062500 ms MarkObjects: 6.707600 ms  DeleteObjects: 0.647900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

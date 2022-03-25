@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyATBullet : MonoBehaviour
+public class EnemyATBullet : Bullet
 {
     public int BulletPower;
+
     public bool Fire = false;
+    public bool IsHoming = false;
 
     public Transform PlayerTr;
     public Rigidbody ballrigid;
@@ -16,6 +18,7 @@ public class EnemyATBullet : MonoBehaviour
     private void Start()
     {
         PlayerTr = GameObject.Find("Player").transform;
+        HP = 2;
     }
 
     private void OnDestroy()
@@ -26,7 +29,7 @@ public class EnemyATBullet : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
-        if(Fire == true)
+        if (Fire == true)
         {
             //Debug.Log("Fire");
             FireBullet();
@@ -51,6 +54,8 @@ public class EnemyATBullet : MonoBehaviour
 
     public void ThisDestroy()
     {
-        Destroy(this.gameObject, 5.0f);
+        Destroy(this.gameObject, (Vector3.Distance(this.gameObject.transform.position, PlayerTr.position) / 60));
+
+        Debug.Log(Vector3.Distance(this.gameObject.transform.position, PlayerTr.position) / 80);
     }
 }

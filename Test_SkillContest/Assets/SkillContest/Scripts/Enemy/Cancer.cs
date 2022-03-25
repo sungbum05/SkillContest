@@ -52,7 +52,7 @@ public class Cancer : Enemy
 
             if (AttackRange <= 700 && Bullets.Count <= 0)
             {
-                yield return new WaitForSeconds(AttackDelay);
+                yield return new WaitForSeconds(Random.Range(AttackDelay - 1.0f, AttackDelay + 2.0f));
 
                 for (int i = 1; i <= ShotCnt; i++)
                 {
@@ -91,7 +91,7 @@ public class Cancer : Enemy
 
         foreach(GameObject Bullet in Bullets)
         {
-            Bullet.transform.parent = DesBulletZip.transform;
+            Bullet.transform.parent = GameObject.Find("DesBulletZip").transform;
 
             Bullet.GetComponent<EnemyATBullet>().Fire = true;
             Bullet.GetComponent<EnemyATBullet>().ThisDestroy();
@@ -114,7 +114,7 @@ public class Cancer : Enemy
         {
             yield return null;
 
-            if (Mathf.Approximately(Bullet.transform.position.x, this.transform.position.x + GotoBulletPos.x))
+            if (Mathf.Approximately(Bullet.transform.position.y, this.transform.position.y + GotoBulletPos.y))
             {
                 Bullets.Add(Bullet);
                 break;
