@@ -49,7 +49,7 @@ public abstract class Enemy : MonoBehaviour
     protected float AttackRange;
 
     [SerializeField]
-    protected int AttckPower;
+    public int AttckPower;
 
     [SerializeField]
     protected int BulletSpeed;

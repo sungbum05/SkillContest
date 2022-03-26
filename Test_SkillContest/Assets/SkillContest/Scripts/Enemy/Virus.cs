@@ -53,8 +53,6 @@ public class Virus : Enemy
                 StartCoroutine(StartAttck(Bullet));
             }
 
-            Debug.Log(ShotCnt);
-
             if (ShotCnt >= MaxShotCnt.Count)
                 ShotCnt = 1;
 

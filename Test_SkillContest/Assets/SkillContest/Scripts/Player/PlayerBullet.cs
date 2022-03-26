@@ -6,6 +6,10 @@ public class PlayerBullet : MonoBehaviour
 {
     public int PlayerBulletPower = 0;
 
+    public GameObject Target;
+    public bool StartFire = false;
+    public bool TargetChk = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,14 @@ public class PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!Target)
+            DestroyBullet();
+
+        if (StartFire == true && Target)
+        {
+            Fire(Target);
+            StartFire = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,5 +55,27 @@ public class PlayerBullet : MonoBehaviour
     void DestroyBullet()
     {
         Destroy(this.gameObject);
+    }
+
+    public void BasicSetting(bool FireChk, GameObject Enemy)
+    {
+        StartFire = FireChk;
+        Target = Enemy;
+    }
+
+
+    void Fire(GameObject Target)
+    {
+        this.gameObject.transform.LookAt(Target.transform);
+        this.gameObject.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * 300, ForceMode.Impulse);
+    }
+
+    void HomingFire(GameObject Target)
+    {
+        if (Target = null)
+            DestroyBullet();
+
+        this.gameObject.transform.LookAt(Target.transform);
+        this.gameObject.GetComponent<Rigidbody>().velocity = this.gameObject.transform.forward * 150;
     }
 }

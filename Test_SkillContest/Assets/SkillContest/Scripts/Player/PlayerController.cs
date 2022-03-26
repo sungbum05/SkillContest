@@ -8,18 +8,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int hp;
 
-    public int HP { 
+    public int HP
+    {
 
-        get 
-        { 
-            return hp; 
+        get
+        {
+            return hp;
         }
 
         set
         {
             hp = value;
 
-            if(hp <= 0)
+            if (hp <= 0)
             {
                 OnDie();
             }
@@ -47,6 +48,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float BulletSpeed = 200;
 
+    [Header("플레이어 아이템")]
+    public GameObject Shield;
+
+    public int WeaponCnt = 0;
+    public GameObject Jet;
+    public GameObject MoveZip;
+    public List<GameObject> UpGradeWeapon;
+    public List<GameObject> MovePoints;
+
 
     [Header("플레이어 컴포넌트")]
     public Rigidbody rigidbody;
@@ -59,6 +69,8 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(LeftWheelRotate());
         StartCoroutine(RightWheelRotate());
         StartCoroutine(PlayerRotate());
+
+        AddSubWeaPon();
     }
 
     // Update is called once per frame
@@ -228,6 +240,59 @@ public class PlayerController : MonoBehaviour
                     }
 
                     break;
+            }
+        }
+    }
+
+    void AddSubWeaPon()
+    {
+        int Idx = 0;
+
+        foreach (Transform T in Jet.transform)
+        {
+            UpGradeWeapon.Add(T.gameObject);
+        }
+
+        foreach(Transform T in MoveZip.transform)
+        {
+            MovePoints.Add(T.gameObject);
+        }
+
+        foreach(GameObject Obj in UpGradeWeapon)
+        {
+            StartCoroutine(RotateSubWeapon(Obj.gameObject, Idx));
+            Idx++;
+        }
+    }
+
+    IEnumerator RotateSubWeapon(GameObject SubWeapon, int Idx)
+    {
+        Idx += 1;
+
+        if (Idx >= UpGradeWeapon.Count)
+        {
+            Idx = 0;
+        }
+
+        Vector3 TargetPos;
+
+        while (true)
+        {
+            yield return null;
+            if (WeaponCnt > 0)
+            {
+                TargetPos = MovePoints[Idx].transform.position;
+                SubWeapon.transform.position = Vector3.MoveTowards(SubWeapon.transform.position, TargetPos, 2 * Time.deltaTime);
+
+                if (TargetPos.Equals(SubWeapon.transform.position))
+                {
+                    Idx += 1;
+
+                    if (Idx >= UpGradeWeapon.Count)
+                    {
+                        Idx = 0;
+                    }
+                }
             }
         }
     }
