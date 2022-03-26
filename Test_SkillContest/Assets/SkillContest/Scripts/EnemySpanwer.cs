@@ -9,6 +9,7 @@ public class EnemySpanwer : MonoBehaviour
     [SerializeField] private GameObject Bacteria;
     [SerializeField] private GameObject Germ;
     [SerializeField] private GameObject Cancer;
+    [SerializeField] private GameObject Virus;
     [SerializeField] private GameObject EventWall_1;
 
     [Header("스폰 데이터")]
@@ -53,7 +54,7 @@ public class EnemySpanwer : MonoBehaviour
 
             var EnemyData = new EnemyData();
 
-            EnemyData.SpawnDelay = float.Parse(EnemyLine[0]);
+            EnemyData.SpawnDelay = int.Parse(EnemyLine[0]);
             EnemyData.SpawnType = EnemyLine[1].ToString();
             EnemyData.SpawnPos = int.Parse(EnemyLine[2]);
 
@@ -80,7 +81,7 @@ public class EnemySpanwer : MonoBehaviour
                     break;
             }
 
-            EnemyData.WaitTime = float.Parse(EnemyLine[4]);
+            EnemyData.WaitTime = int.Parse(EnemyLine[4]);
 
             EnemyDatas.Add(EnemyData);
         }
@@ -111,6 +112,10 @@ public class EnemySpanwer : MonoBehaviour
 
                 case "Cancer":
                     Enemy = Instantiate(Cancer, spawnVec, Cancer.transform.rotation);
+                    break;
+
+                case "Virus":
+                    Enemy = Instantiate(Virus, spawnVec, Virus.transform.rotation);
                     break;
 
                 case "EventWall_1":
