@@ -163,11 +163,11 @@ MonoBehaviour:
   ShieldCnt: 0
   Target: {fileID: 0}
   EnemyBullet: {fileID: 1365608390604148659, guid: 986700384884a4e49a58d042c98537c9, type: 3}
-  AttackDelay: 1
+  AttackDelay: 2
   AttackRange: 50
   AttckPower: 5
-  BulletSpeed: 70
-  ShotCnt: 2
+  BulletSpeed: 80
+  ShotCnt: 3
   BulletZip: {fileID: 2096743344172004389}
   DesBulletZip: {fileID: 0}
   Bullets: []

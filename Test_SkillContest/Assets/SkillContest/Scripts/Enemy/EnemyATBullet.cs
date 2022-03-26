@@ -9,7 +9,6 @@ public class EnemyATBullet : Bullet
     public bool Fire = false;
     public bool IsHoming = false;
 
-    public Transform PlayerTr;
     public Rigidbody ballrigid;
     public float turn;
     public float ballvelocity;
@@ -32,7 +31,7 @@ public class EnemyATBullet : Bullet
         if (Fire == true)
         {
             //Debug.Log("Fire");
-            FireBullet();
+            StartCoroutine(FireBullet());
         }
     }
 
@@ -45,11 +44,12 @@ public class EnemyATBullet : Bullet
         }
     }
 
-    public void FireBullet()
+    public IEnumerator FireBullet()
     {
-        ballrigid.velocity = transform.forward * ballvelocity;
-        var ballTargetRotation = Quaternion.LookRotation(PlayerTr.position + new Vector3(0, 0, 0.8f) - transform.position);
-        ballrigid.MoveRotation(Quaternion.RotateTowards(transform.rotation, ballTargetRotation, turn));
+        yield return new WaitForSeconds(0.3f);
+
+        this.gameObject.transform.LookAt(PlayerTr);
+        this.gameObject.GetComponent<Rigidbody>().velocity = this.gameObject.transform.forward * ballvelocity;
     }
 
     public void ThisDestroy()

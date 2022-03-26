@@ -6,6 +6,9 @@ public class Bullet : MonoBehaviour
 {
     private int hp;
 
+    [SerializeField]
+    protected Transform PlayerTr;
+
     public int HP { 
         get
         {
