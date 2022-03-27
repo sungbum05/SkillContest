@@ -7,6 +7,11 @@ public class Item_Shield : Item
     [SerializeField]
     GameObject Player;
 
+    protected override void Update()
+    {
+        base.Update();
+    }
+
     protected override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);

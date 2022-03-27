@@ -21,6 +21,7 @@ public class Cancer : Enemy
     void Update()
     {
         EnemyMove();
+        DownFreeze();
     }
 
     protected override void EnemyMove()
@@ -48,7 +49,7 @@ public class Cancer : Enemy
 
             Debug.Log(Bullets.Count);
 
-            if (AttackRange <= 700 && Bullets.Count <= 0)
+            if (AttackRange <= 700 && Bullets.Count <= 0 && FreezeTime <= 0)
             {
                 yield return new WaitForSeconds(Random.Range(AttackDelay - 1.0f, AttackDelay + 2.0f));
 

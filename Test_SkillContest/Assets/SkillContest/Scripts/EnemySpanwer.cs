@@ -144,20 +144,23 @@ public class EnemySpanwer : MonoBehaviour
         while (true)
         {
             yield return null;
-            Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
-
-            //yield return new WaitForSeconds(WaitTime);
-            Enemy.transform.position = Vector3.MoveTowards(Enemy.gameObject.transform.position, TargetPos, 15 * Time.deltaTime);
-
-            if (Enemy.transform.position.Equals(TargetPos))
+            if (Enemy.GetComponent<Enemy>().FreezeTime <= 0.0f)
             {
-                yield return new WaitForSeconds(WaitTime);
+                Vector3 TargetPos = new Vector3(SpawnPoint[curPos + MoveDir].position.x, SpawnPoint[curPos + MoveDir].position.y, Enemy.transform.position.z);
 
-                curPos += MoveDir;
+                //yield return new WaitForSeconds(WaitTime);
+                Enemy.transform.position = Vector3.MoveTowards(Enemy.gameObject.transform.position, TargetPos, 15 * Time.deltaTime);
 
-                MoveDir *= -1;
+                if (Enemy.transform.position.Equals(TargetPos))
+                {
+                    yield return new WaitForSeconds(WaitTime);
 
-                Debug.Log(MoveDir);
+                    curPos += MoveDir;
+
+                    MoveDir *= -1;
+
+                    Debug.Log(MoveDir);
+                }
             }
         }
     }

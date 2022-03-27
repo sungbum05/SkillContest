@@ -8,9 +8,13 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected float MoveSpeed;
 
-
     public int hp = 0;
     public int ShieldCnt = 0;
+
+    [SerializeField]
+    float BackupSpeed;
+
+    public float FreezeTime;
 
     public int Hp 
     { 
@@ -83,5 +87,24 @@ public abstract class Enemy : MonoBehaviour
     protected void GetTarget()
     {
         Target = GameObject.Find("Player").transform;
+    }
+
+    protected void DownFreeze()
+    {
+        if (FreezeTime > 0)
+        {
+            if(FreezeTime >= 3.0f)
+            {
+                MoveSpeed = 0;
+            }
+
+            FreezeTime -= Time.deltaTime;
+        }
+
+        else
+        {
+            MoveSpeed = BackupSpeed;
+            FreezeTime = 0;
+        }
     }
 }

@@ -1516,6 +1516,8 @@ MonoBehaviour:
   MoveSpeed: 1
   hp: 50
   ShieldCnt: 0
+  BackupSpeed: 1
+  FreezeTime: 0
   Target: {fileID: 0}
   EnemyBullet: {fileID: 1365608390604148659, guid: 73f6149ad507f98439f0334d439b8378, type: 3}
   AttackDelay: 1.5

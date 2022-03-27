@@ -10,9 +10,9 @@ public class Item_Pain : Item
     int PainCnt = 10;
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-
+        base.Update();
     }
 
     protected override void OnTriggerEnter(Collider other)

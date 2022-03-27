@@ -14,6 +14,7 @@ public class Bacteria : Enemy
     void Update()
     {
         EnemyMove();
+        DownFreeze();
     }
 
     protected override IEnumerator Attack()

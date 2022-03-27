@@ -38,7 +38,7 @@ public class Germ : Enemy
             AttackRange = Vector3.Distance(this.gameObject.transform.position, Target.position); 
 
             yield return null;
-            if (ShieldCnt <= 0 && AttackRange <= 500)
+            if (ShieldCnt <= 0 && AttackRange <= 500 && FreezeTime <= 0)
             {
                 foreach (Transform Pos in FirePos)
                 {

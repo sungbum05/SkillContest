@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
     public List<GameObject> UpGradeWeapon;
     public List<GameObject> MovePoints;
 
+    public GameObject Boom;
+    public float BoomTime;
+    public float BoomScale;
+
 
     [Header("플레이어 컴포넌트")]
     public Rigidbody rigidbody;
@@ -86,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
         PlayerAttack();
         OnShield();
+        OnBoom();
     }
 
     #region 플레이어 기본 조작
@@ -256,7 +261,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    #region 무기 업그레이드 함수
+    #region 무기 업그레이드 회전 함수
     void AddSubWeaPon()
     {
         int Idx = 0;
@@ -341,6 +346,39 @@ public class PlayerController : MonoBehaviour
             Shield.transform.localScale = new Vector3(0,0,0);
 
             Shield.gameObject.SetActive(false);
+        }
+    }
+
+    #endregion
+
+    #region 폭발 함수
+    void OnBoom()
+    {
+        if (BoomTime > 0.0f)
+        {
+            BoomTime -= Time.deltaTime;
+
+            Boom.gameObject.SetActive(true);
+
+            if (BoomTime >= 2.0f && Boom.transform.localScale.x <= 35.0f)
+            {
+                Boom.transform.localScale += new Vector3(BoomScale * Time.deltaTime, BoomScale * Time.deltaTime, BoomScale * Time.deltaTime);
+            }
+
+            else if (BoomTime <= 1.0f && Boom.transform.localScale.x >= 0.0f)
+            {
+                Debug.Log("asdasd");
+
+                Boom.transform.localScale -= new Vector3(BoomScale * Time.deltaTime, BoomScale * Time.deltaTime, BoomScale * Time.deltaTime);
+            }
+        }
+
+        else
+        {
+            BoomTime = 0.0f;
+            Boom.transform.localScale = new Vector3(0, 0, 0);
+
+            Boom.gameObject.SetActive(false);
         }
     }
 

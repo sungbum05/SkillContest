@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Item_PowerUp : Item
 {
+    protected override void Update()
+    {
+        base.Update();
+    }
+
     protected override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);

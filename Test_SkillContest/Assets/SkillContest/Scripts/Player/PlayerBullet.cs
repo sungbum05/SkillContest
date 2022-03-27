@@ -72,7 +72,7 @@ public class PlayerBullet : MonoBehaviour
 
     void HomingFire(GameObject Target)
     {
-        if (Target = null)
+        if (!Target)
             DestroyBullet();
 
         this.gameObject.transform.LookAt(Target.transform);

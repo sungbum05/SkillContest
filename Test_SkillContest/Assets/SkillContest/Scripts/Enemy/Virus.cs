@@ -23,6 +23,7 @@ public class Virus : Enemy
     void Update()
     {
         EnemyMove();
+        DownFreeze();
 
         target = GameObject.Find("Player").transform;
     }
@@ -42,22 +43,27 @@ public class Virus : Enemy
         {
             yield return new WaitForSeconds(AttackDelay);
 
-            for (int i = 0; i < ShotCnt; i++)
+            AttackRange = Vector3.Distance(this.gameObject.transform.position, Target.position);
+
+            if (AttackRange < 700 && FreezeTime <= 0)
             {
-                GameObject Bullet = Instantiate(EnemyBullet, this.gameObject.transform.position, EnemyBullet.transform.rotation);
-                Bullet.GetComponent<EnemyBullet>().BulletPower = AttckPower;
-                Bullet.transform.position = MaxShotCnt[i].position;
+                for (int i = 0; i < ShotCnt; i++)
+                {
+                    GameObject Bullet = Instantiate(EnemyBullet, this.gameObject.transform.position, EnemyBullet.transform.rotation);
+                    Bullet.GetComponent<EnemyBullet>().BulletPower = AttckPower;
+                    Bullet.transform.position = MaxShotCnt[i].position;
 
-                Bullet.transform.LookAt(Target);
+                    Bullet.transform.LookAt(Target);
 
-                StartCoroutine(StartAttck(Bullet));
+                    StartCoroutine(StartAttck(Bullet));
+                }
+
+                if (ShotCnt >= MaxShotCnt.Count)
+                    ShotCnt = 1;
+
+                else
+                    ShotCnt += 2;
             }
-
-            if (ShotCnt >= MaxShotCnt.Count)
-                ShotCnt = 1;
-
-            else
-                ShotCnt += 2;
         }
     }
 

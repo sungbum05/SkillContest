@@ -1866,12 +1866,15 @@ MonoBehaviour:
   MoveSpeed: 5
   hp: 0
   ShieldCnt: 0
+  BackupSpeed: 5
+  FreezeTime: 0
   Target: {fileID: 0}
   EnemyBullet: {fileID: 0}
   AttackDelay: 0
   AttackRange: 0
   AttckPower: 10
   BulletSpeed: 0
+  ShotCnt: 0
 --- !u!65 &8205314703514850610
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1301,12 +1301,15 @@ MonoBehaviour:
   MoveSpeed: 5
   hp: 0
   ShieldCnt: 0
+  BackupSpeed: 5
+  FreezeTime: 0
   Target: {fileID: 0}
   EnemyBullet: {fileID: 1365608390604148659, guid: 73f6149ad507f98439f0334d439b8378, type: 3}
   AttackDelay: 0.8
   AttackRange: 0
   AttckPower: 10
   BulletSpeed: 150
+  ShotCnt: 0
   Shield: {fileID: 157453488}
   ShieldForm: {fileID: 1468639848971002259}
   GunForm: {fileID: 1281402161}

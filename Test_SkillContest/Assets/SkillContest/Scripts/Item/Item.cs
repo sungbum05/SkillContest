@@ -10,8 +10,13 @@ public class Item : MonoBehaviour
         {
             Debug.Log("asd");
             ItemEffect(other.gameObject);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject.transform.parent.gameObject);
         }
+    }
+
+    protected virtual void Update()
+    {
+        this.gameObject.transform.Rotate(0, 90 * Time.deltaTime, 0);
     }
 
     protected virtual void ItemEffect(GameObject Player)
