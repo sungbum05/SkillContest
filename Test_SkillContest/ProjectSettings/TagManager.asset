@@ -9,6 +9,9 @@ TagManager:
   - Enemy
   - EnemyBullet
   - Item
+  - Cell
+  - WhiteCell
+  - RedCell
   layers:
   - Default
   - TransparentFX

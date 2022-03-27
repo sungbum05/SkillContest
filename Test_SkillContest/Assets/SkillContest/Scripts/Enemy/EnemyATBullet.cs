@@ -42,6 +42,11 @@ public class EnemyATBullet : Bullet
             other.gameObject.GetComponent<PlayerController>().HP -= BulletPower;
             Destroy(this.gameObject);
         }
+
+        if (other.gameObject.CompareTag("RedCell"))
+        {
+            other.gameObject.GetComponent<Cell>().Hp -= 9999;
+        }
     }
 
     public IEnumerator FireBullet()

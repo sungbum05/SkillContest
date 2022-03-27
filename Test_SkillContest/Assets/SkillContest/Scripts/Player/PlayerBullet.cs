@@ -31,7 +31,7 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Ok");
 
@@ -39,9 +39,15 @@ public class PlayerBullet : MonoBehaviour
             DestroyBullet();
         }
 
-        if(other.gameObject.CompareTag("EnemyBullet"))
+        if (other.gameObject.CompareTag("EnemyBullet"))
         {
             other.GetComponent<Bullet>().HP--;
+            DestroyBullet();
+        }
+
+        if (other.gameObject.CompareTag("WhiteCell"))
+        {
+            other.gameObject.GetComponent<Cell>().Hp -= 10;
             DestroyBullet();
         }
     }
