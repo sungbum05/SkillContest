@@ -1,0 +1,12 @@
+0,Bacteria,0,None,0
+1,Bacteria,0,None,0
+2,Bacteria,0,None,0
+3,Bacteria,0,None,0
+7,Bacteria,0,None,0
+11,Bacteria,0,None,0
+15,Bacteria,0,None,0
+4,Bacteria,0,None,0
+8,Bacteria,0,None,0
+12,Bacteria,0,None,0
+13,Bacteria,0,None,0
+14,Bacteria,0,None,0

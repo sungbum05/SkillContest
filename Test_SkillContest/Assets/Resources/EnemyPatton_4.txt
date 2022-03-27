@@ -1,6 +1,0 @@
-0,Germ,2,Left,2
-0,Germ,6,Left,2
-0,Germ,10,Left,2
-0,Germ,14,Left,2
-0,Germ,8,None,2
-0,Germ,11,N,2

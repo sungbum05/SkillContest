@@ -45,15 +45,16 @@ public class GameManager : MonoBehaviour
     [Header("UI °´Ã¼")]
     public Slider HpSlider;
     public Slider PainSlider;
+    public Slider ProgressSlider;
+
     public Text HpText;
     public Text PainText;
+    public Text ProgressText;
 
     // Start is called before the first frame update
     void Start()
     {
         BasicSetting();
-
-        SendEnemyData();
     }
 
     // Update is called once per frame
@@ -62,10 +63,14 @@ public class GameManager : MonoBehaviour
         CurrentState();
     }
 
-    void SendEnemyData()
+    public IEnumerator SendEnemyData()
     {
         enemySpanwer.ReadEnemyData(
-            Resources.Load<TextAsset>($"EnemyPatton_6").text);
+            Resources.Load<TextAsset>($"Stage{Stage}/EnemyPatton_{Random.Range(1,7)}").text);
+
+        yield return new WaitForSeconds(15.0f);
+
+        StartCoroutine(SendEnemyData());
     }
     
     void BasicSetting()
@@ -86,20 +91,27 @@ public class GameManager : MonoBehaviour
 
         HpSlider = GameObject.Find("HpSlider").gameObject.GetComponent<Slider>();
         PainSlider = GameObject.Find("PainSlider").gameObject.GetComponent<Slider>();
+        ProgressSlider = GameObject.Find("ProgressSlider").gameObject.GetComponent<Slider>();
+
         HpText = GameObject.Find("HpTxt").gameObject.GetComponent<Text>();
         PainText = GameObject.Find("PainTxt").gameObject.GetComponent<Text>();
+        ProgressText = GameObject.Find("ProgressTxt").gameObject.GetComponent<Text>();
 
         HpSlider.value = Player.HP;
         PainSlider.value = Pain;
+        ProgressSlider.maxValue = 5000;
+        ProgressSlider.value = Player.transform.position.z;
     }
 
     void CurrentState()
     {
         HpText.text = $"HP : {Player.HP}";
         PainText.text = $"PAIN : {Pain}";
+        ProgressText.text = $"{System.Math.Truncate((ProgressSlider.value/ProgressSlider.maxValue) * 100)} %";
 
         HpSlider.value = GotoValue(HpSlider.value, Player.HP);
         PainSlider.value = GotoValue(PainSlider.value, Pain);
+        ProgressSlider.value = Player.transform.position.z;
     }
 
     float GotoValue(float Value, float TargetValue)

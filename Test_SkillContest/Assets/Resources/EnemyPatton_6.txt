@@ -1,4 +1,0 @@
-0,Virus,5,None,2
-0,Virus,10,None,2
-0,Bacteria,0,Right,2
-0,Bacteria,15,Left,2

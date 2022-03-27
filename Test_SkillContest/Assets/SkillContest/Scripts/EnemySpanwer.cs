@@ -22,10 +22,9 @@ public class EnemySpanwer : MonoBehaviour
         AddPoints();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-
+        StartCoroutine(GameManager.Instance.SendEnemyData());
     }
 
     void AddPoints()
@@ -87,6 +86,7 @@ public class EnemySpanwer : MonoBehaviour
         }
 
         StartCoroutine(EnemySpawn());
+        EnemyDatas.Clear();
     }
 
     IEnumerator EnemySpawn()

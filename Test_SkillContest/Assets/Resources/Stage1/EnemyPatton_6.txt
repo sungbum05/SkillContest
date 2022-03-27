@@ -1,0 +1,4 @@
+0,Germ,1,Left,2
+0,Bacteria,2,Right,2
+0,Germ,10,Right,2
+0,Bacteria,9,Left,2
