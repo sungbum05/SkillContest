@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("플레이어 상태")]
     [SerializeField]
     private int hp;
+    bool ShieldChk = false;
 
     public int HP
     {
@@ -18,11 +19,14 @@ public class PlayerController : MonoBehaviour
 
         set
         {
-            hp = value;
-
-            if (hp <= 0)
+            if (ShieldChk == false)
             {
-                OnDie();
+                hp = value;
+
+                if (hp <= 0)
+                {
+                    OnDie();
+                }
             }
         }
     }
@@ -50,6 +54,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("플레이어 아이템")]
     public GameObject Shield;
+    public float ShieldTime;
+    public float ShieldScale;
 
     public int WeaponCnt = 0;
     public GameObject Jet;
@@ -79,8 +85,10 @@ public class PlayerController : MonoBehaviour
         PlayerMove();
 
         PlayerAttack();
+        OnShield();
     }
 
+    #region 플레이어 기본 조작
     void PlayerMove()
     {
         Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetKey(KeyCode.LeftShift) ? 1 : 0.4f);
@@ -102,9 +110,12 @@ public class PlayerController : MonoBehaviour
             GameObject Bullet = Instantiate(PlayerBullet, this.gameObject.transform.position, Quaternion.identity);
             Bullet.GetComponent<Rigidbody>().AddForce(this.gameObject.transform.forward * BulletSpeed, ForceMode.Impulse);
             Bullet.GetComponent<PlayerBullet>().PlayerBulletPower = BulletPower;
+            Bullet.GetComponent<PlayerBullet>().Target = this.gameObject;
         }
     }
+    #endregion
 
+    #region 플레이어 회전
     IEnumerator PlayerRotate()
     {
         while (true)
@@ -243,7 +254,9 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    #endregion
 
+    #region 무기 업그레이드 함수
     void AddSubWeaPon()
     {
         int Idx = 0;
@@ -253,12 +266,12 @@ public class PlayerController : MonoBehaviour
             UpGradeWeapon.Add(T.gameObject);
         }
 
-        foreach(Transform T in MoveZip.transform)
+        foreach (Transform T in MoveZip.transform)
         {
             MovePoints.Add(T.gameObject);
         }
 
-        foreach(GameObject Obj in UpGradeWeapon)
+        foreach (GameObject Obj in UpGradeWeapon)
         {
             StartCoroutine(RotateSubWeapon(Obj.gameObject, Idx));
             Idx++;
@@ -296,6 +309,42 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    #endregion
+
+    #region 무적 함수
+    void OnShield()
+    {
+        if(ShieldTime > 0.0f)
+        {
+            ShieldChk = true;
+            ShieldTime -= Time.deltaTime;
+
+            Shield.gameObject.SetActive(true);
+
+            Shield.gameObject.transform.Rotate(0, 90 * Time.deltaTime, 0);
+
+            if(ShieldTime >= 2.5f && Shield.transform.localScale.x <= 7.0f)
+            {
+                Shield.transform.localScale += new Vector3(ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime);
+            }
+
+            else if(ShieldTime <= 0.5f && Shield.transform.localScale.x >= 0.0f)
+            {
+                Shield.transform.localScale -= new Vector3(ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime);
+            }
+        }
+
+        else
+        {
+            ShieldTime = 0.0f;
+            ShieldChk = false;
+            Shield.transform.localScale = new Vector3(0,0,0);
+
+            Shield.gameObject.SetActive(false);
+        }
+    }
+
+    #endregion
 
     void OnDie()
     {
