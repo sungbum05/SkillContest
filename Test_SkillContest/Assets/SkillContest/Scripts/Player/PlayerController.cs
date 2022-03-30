@@ -96,10 +96,21 @@ public class PlayerController : MonoBehaviour
     #region 플레이어 기본 조작
     void PlayerMove()
     {
-        Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetKey(KeyCode.LeftShift) ? 1 : 0.4f);
-
         #region 플레이어 메인 움직임
-        this.gameObject.transform.position += new Vector3(MoveDir.x, MoveDir.y, MoveDir.z) * MoveSpeed * Time.deltaTime;
+        if (GameManager.Instance.BossSpawm == false)
+        {
+            Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetKey(KeyCode.LeftShift) ? 1 : 0.4f);
+
+            this.gameObject.transform.position += new Vector3(MoveDir.x, MoveDir.y, MoveDir.z) * MoveSpeed * Time.deltaTime;
+        }
+
+        else 
+        {
+            Vector3 MoveDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
+
+            this.gameObject.transform.position += new Vector3(MoveDir.x, MoveDir.y, MoveDir.z) * MoveSpeed * Time.deltaTime;
+            GameManager.Instance.BossSpawm = true;
+        }
 
         this.gameObject.transform.position = new Vector3(Mathf.Clamp(this.gameObject.transform.position.x, MinX, MaxX)
             , Mathf.Clamp(this.gameObject.transform.position.y, MinY, MaxY)
@@ -319,7 +330,7 @@ public class PlayerController : MonoBehaviour
     #region 무적 함수
     void OnShield()
     {
-        if(ShieldTime > 0.0f)
+        if (ShieldTime > 0.0f)
         {
             ShieldChk = true;
             ShieldTime -= Time.deltaTime;
@@ -328,12 +339,12 @@ public class PlayerController : MonoBehaviour
 
             Shield.gameObject.transform.Rotate(0, 90 * Time.deltaTime, 0);
 
-            if(ShieldTime >= 2.5f && Shield.transform.localScale.x <= 7.0f)
+            if (ShieldTime >= 2.5f && Shield.transform.localScale.x <= 7.0f)
             {
                 Shield.transform.localScale += new Vector3(ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime);
             }
 
-            else if(ShieldTime <= 0.5f && Shield.transform.localScale.x >= 0.0f)
+            else if (ShieldTime <= 0.5f && Shield.transform.localScale.x >= 0.0f)
             {
                 Shield.transform.localScale -= new Vector3(ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime, ShieldScale * Time.deltaTime);
             }
@@ -343,7 +354,7 @@ public class PlayerController : MonoBehaviour
         {
             ShieldTime = 0.0f;
             ShieldChk = false;
-            Shield.transform.localScale = new Vector3(0,0,0);
+            Shield.transform.localScale = new Vector3(0, 0, 0);
 
             Shield.gameObject.SetActive(false);
         }

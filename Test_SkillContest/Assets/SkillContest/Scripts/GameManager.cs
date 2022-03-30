@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
     public Text PainText;
     public Text ProgressText;
 
+    [Header("º¸½ºÀü")]
+    public GameObject Boss;
+    public bool BossSpawm = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,16 +65,22 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CurrentState();
+        BossGame();
     }
 
     public IEnumerator SendEnemyData()
     {
+        Debug.Log("das");
+
         enemySpanwer.ReadEnemyData(
             Resources.Load<TextAsset>($"Stage{Stage}/EnemyPatton_{Random.Range(1,7)}").text);
 
-        yield return new WaitForSeconds(15.0f);
+        if (BossSpawm == false)
+        {
+            yield return new WaitForSeconds(15.0f);
 
-        StartCoroutine(SendEnemyData());
+            StartCoroutine(SendEnemyData());
+        }
     }
     
     void BasicSetting()
@@ -88,6 +98,7 @@ public class GameManager : MonoBehaviour
 
         enemySpanwer = FindObjectOfType(typeof(EnemySpanwer)) as EnemySpanwer;
         Player = FindObjectOfType(typeof(PlayerController)) as PlayerController;
+        Boss = GameObject.FindGameObjectWithTag("Boss").gameObject;
 
         HpSlider = GameObject.Find("HpSlider").gameObject.GetComponent<Slider>();
         PainSlider = GameObject.Find("PainSlider").gameObject.GetComponent<Slider>();
@@ -112,6 +123,15 @@ public class GameManager : MonoBehaviour
         HpSlider.value = GotoValue(HpSlider.value, Player.HP);
         PainSlider.value = GotoValue(PainSlider.value, Pain);
         ProgressSlider.value = Player.transform.position.z;
+    }
+
+    public void BossGame()
+    {
+        if(Player.transform.position.z >= 5000)
+        {
+            BossSpawm = true;
+            Boss.SetActive(true);
+        }
     }
 
     float GotoValue(float Value, float TargetValue)

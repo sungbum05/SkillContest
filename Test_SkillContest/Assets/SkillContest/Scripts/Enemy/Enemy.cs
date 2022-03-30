@@ -5,8 +5,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     [Header("Àû ¼Ó¼º")]
-    [SerializeField]
-    protected float MoveSpeed;
+    public float MoveSpeed;
 
     public int hp = 0;
     public int ShieldCnt = 0;
@@ -77,7 +76,14 @@ public abstract class Enemy : MonoBehaviour
 
     protected abstract void EnemyPatton();
 
-    protected abstract void EnemyMove();
+    protected virtual void EnemyMove()
+    {
+        if (GameManager.Instance.BossSpawm == false)
+            this.gameObject.transform.Translate(0, 0, -MoveSpeed * Time.deltaTime);
+
+        else
+            this.gameObject.transform.Translate(0, 0, -(MoveSpeed + 30) * Time.deltaTime);
+    }
 
     private void Ondie()
     {

@@ -77,7 +77,7 @@ public class Virus : Enemy
 
     protected override void EnemyMove()
     {
-        this.gameObject.transform.Translate(0, 0, -MoveSpeed * Time.deltaTime);
+        base.EnemyMove();
     }
 
     protected override void EnemyPatton()

@@ -12,6 +12,7 @@ TagManager:
   - Cell
   - WhiteCell
   - RedCell
+  - Boss
   layers:
   - Default
   - TransparentFX

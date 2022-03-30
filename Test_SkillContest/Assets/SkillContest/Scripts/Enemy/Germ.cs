@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Germ : Enemy
 {
-
     [Header("Germ 고유 속성")]
     [SerializeField] GameObject Shield;
 
@@ -54,7 +53,7 @@ public class Germ : Enemy
 
     protected override void EnemyMove()
     {
-        this.gameObject.transform.Translate(0,0,-MoveSpeed * Time.deltaTime);
+        base.EnemyMove();
     }
 
     protected override void EnemyPatton()
