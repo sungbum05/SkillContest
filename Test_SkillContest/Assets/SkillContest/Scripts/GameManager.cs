@@ -6,10 +6,38 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    #region 인스턴스 생성
-    private static GameManager instance;
+    //#region 인스턴스 생성
+    //private static GameManager instance;
 
-    public static GameManager Instance { 
+    //public static GameManager Instance { 
+    //    get
+    //    {
+    //        if(!instance)
+    //        {
+    //            instance = FindObjectOfType(typeof(GameManager)) as GameManager;
+    //        }
+
+    //        return instance;
+    //    } 
+    //}
+
+    //private void Awake()
+    //{
+    //    if (instance == null)
+    //        instance = this;
+
+    //    else if(instance != this)
+    //    {
+    //        Destroy(this.gameObject);
+    //    }
+
+    //    DontDestroyOnLoad(this.gameObject);
+    //}
+    //#endregion
+
+    private static GameManager instance;
+    public static GameManager Instance
+    {
         get
         {
             if(!instance)
@@ -18,7 +46,7 @@ public class GameManager : MonoBehaviour
             }
 
             return instance;
-        } 
+        }
     }
 
     private void Awake()
@@ -33,7 +61,6 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-    #endregion
 
     public int Stage = 1;
     public int Pain = 0;

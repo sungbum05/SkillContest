@@ -1,0 +1,4 @@
+0,Bacteria,1,Bottom,2
+0,Bacteria,2,Bottom,2
+0,Bacteria,13,Top,2
+0,Bacteria,14,Top,2
