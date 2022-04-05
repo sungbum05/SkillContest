@@ -25,7 +25,7 @@ public class Boss : Enemy
     private void Start()
     {
         BossBasicSetting();
-        StartCoroutine(BossPatton1());
+        StartCoroutine(BossPatton2());
     }
 
     // Update is called once per frame
@@ -71,6 +71,50 @@ public class Boss : Enemy
     IEnumerator BossPatton2()
     {
         yield return null;
+
+        ShotCnt = 20;
+
+        float Angle = 360;
+
+        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        for (int i = 0; i <= ShotCnt; i++)
+        {
+            this.gameObject.transform.rotation = Quaternion.Euler(Angle, 0, 0);
+            GameObject Bullet = Instantiate(EnemyBullet, this.gameObject.transform.position, Quaternion.identity);
+            Bullet.GetComponent<Rigidbody>().AddForce((-this.gameObject.transform.forward) * BulletSpeed, ForceMode.Impulse);
+            Angle -= 360 / ShotCnt;
+
+            yield return new WaitForSeconds(0.1f);
+        }
+        Angle = 360;
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i <= ShotCnt; i++)
+        {
+            this.gameObject.transform.rotation = Quaternion.Euler(Angle, 20, 0);
+            GameObject Bullet = Instantiate(EnemyBullet, this.gameObject.transform.position, Quaternion.identity);
+            Bullet.GetComponent<Rigidbody>().AddForce((-this.gameObject.transform.forward) * BulletSpeed, ForceMode.Impulse);
+            Angle -= 360 / ShotCnt;
+
+            yield return new WaitForSeconds(0.1f);
+        }
+        Angle = 360;
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i <= ShotCnt; i++)
+        {
+            this.gameObject.transform.rotation = Quaternion.Euler(Angle, -20, 0);
+            GameObject Bullet = Instantiate(EnemyBullet, this.gameObject.transform.position, Quaternion.identity);
+            Bullet.GetComponent<Rigidbody>().AddForce((-this.gameObject.transform.forward) * BulletSpeed, ForceMode.Impulse);
+            Angle -= 360 / ShotCnt;
+
+            yield return new WaitForSeconds(0.1f);
+        }
+        Angle = 360;
+        yield return new WaitForSeconds(0.3f);
+
+        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     IEnumerator BossPatton3()
